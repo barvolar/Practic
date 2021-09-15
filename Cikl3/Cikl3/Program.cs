@@ -95,13 +95,6 @@ namespace Cikl3
                 Console.WriteLine("Если вы хотите конвертировать валюту напишите Yes ,если хотите завершить работу напишите no");
                 myChoice = Console.ReadLine();
             }
-
-             
-
-
-
-
-
         }
     }
 }
