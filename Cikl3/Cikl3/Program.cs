@@ -18,11 +18,12 @@ namespace Cikl3
             float transferIndexBynInRus = 0.03f;
 
 
-            Console.WriteLine("Если вы хотите конвертировать валюту напишите Yes ,если хотите завершить работу напишите no");
+            Console.WriteLine("Если вы хотите конвертировать валюту напишите всё что угодно ,если хотите завершить работу напишите Exit");
             myChoice = Console.ReadLine();
-            while (myChoice == "Yes")
+            while (myChoice != "Exit")
             {
-
+                Console.WriteLine("ваши счета dolar, byn ,rus");
+                Console.WriteLine("у вас осталось " + dolar + " долоров " + byn + " белоруских рублей " + rus + " российских рублей");
                 Console.WriteLine("из какого счёта вы хотите конвертировать?");
                 transferFrom = Console.ReadLine();
                 if (transferFrom == "dolar")
