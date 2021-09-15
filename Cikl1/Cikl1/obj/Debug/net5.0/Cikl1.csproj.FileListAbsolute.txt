@@ -1,0 +1,16 @@
+E:\Learn\Cikl1\Cikl1\bin\Debug\net5.0\Cikl1.exe
+E:\Learn\Cikl1\Cikl1\bin\Debug\net5.0\Cikl1.deps.json
+E:\Learn\Cikl1\Cikl1\bin\Debug\net5.0\Cikl1.runtimeconfig.json
+E:\Learn\Cikl1\Cikl1\bin\Debug\net5.0\Cikl1.runtimeconfig.dev.json
+E:\Learn\Cikl1\Cikl1\bin\Debug\net5.0\Cikl1.dll
+E:\Learn\Cikl1\Cikl1\bin\Debug\net5.0\ref\Cikl1.dll
+E:\Learn\Cikl1\Cikl1\bin\Debug\net5.0\Cikl1.pdb
+E:\Learn\Cikl1\Cikl1\obj\Debug\net5.0\Cikl1.csprojAssemblyReference.cache
+E:\Learn\Cikl1\Cikl1\obj\Debug\net5.0\Cikl1.GeneratedMSBuildEditorConfig.editorconfig
+E:\Learn\Cikl1\Cikl1\obj\Debug\net5.0\Cikl1.AssemblyInfoInputs.cache
+E:\Learn\Cikl1\Cikl1\obj\Debug\net5.0\Cikl1.AssemblyInfo.cs
+E:\Learn\Cikl1\Cikl1\obj\Debug\net5.0\Cikl1.csproj.CoreCompileInputs.cache
+E:\Learn\Cikl1\Cikl1\obj\Debug\net5.0\Cikl1.dll
+E:\Learn\Cikl1\Cikl1\obj\Debug\net5.0\ref\Cikl1.dll
+E:\Learn\Cikl1\Cikl1\obj\Debug\net5.0\Cikl1.pdb
+E:\Learn\Cikl1\Cikl1\obj\Debug\net5.0\Cikl1.genruntimeconfig.cache
