@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 
 public class Class1
 {
@@ -13,7 +14,11 @@ public class Class1
         bool isfacingright = true;
         byte level Danger = 1;
         short damage = 667;
+        int b = 7;
+        int a = b - 24;
         long armor = 334;
+        Console.WriteLine(a);
 
+        
     }
 }

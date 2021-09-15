@@ -1,0 +1,16 @@
+E:\Learn\test\Kartinki\Kartinki\bin\Debug\net5.0\Kartinki.exe
+E:\Learn\test\Kartinki\Kartinki\bin\Debug\net5.0\Kartinki.deps.json
+E:\Learn\test\Kartinki\Kartinki\bin\Debug\net5.0\Kartinki.runtimeconfig.json
+E:\Learn\test\Kartinki\Kartinki\bin\Debug\net5.0\Kartinki.runtimeconfig.dev.json
+E:\Learn\test\Kartinki\Kartinki\bin\Debug\net5.0\Kartinki.dll
+E:\Learn\test\Kartinki\Kartinki\bin\Debug\net5.0\ref\Kartinki.dll
+E:\Learn\test\Kartinki\Kartinki\bin\Debug\net5.0\Kartinki.pdb
+E:\Learn\test\Kartinki\Kartinki\obj\Debug\net5.0\Kartinki.csprojAssemblyReference.cache
+E:\Learn\test\Kartinki\Kartinki\obj\Debug\net5.0\Kartinki.GeneratedMSBuildEditorConfig.editorconfig
+E:\Learn\test\Kartinki\Kartinki\obj\Debug\net5.0\Kartinki.AssemblyInfoInputs.cache
+E:\Learn\test\Kartinki\Kartinki\obj\Debug\net5.0\Kartinki.AssemblyInfo.cs
+E:\Learn\test\Kartinki\Kartinki\obj\Debug\net5.0\Kartinki.csproj.CoreCompileInputs.cache
+E:\Learn\test\Kartinki\Kartinki\obj\Debug\net5.0\Kartinki.dll
+E:\Learn\test\Kartinki\Kartinki\obj\Debug\net5.0\ref\Kartinki.dll
+E:\Learn\test\Kartinki\Kartinki\obj\Debug\net5.0\Kartinki.pdb
+E:\Learn\test\Kartinki\Kartinki\obj\Debug\net5.0\Kartinki.genruntimeconfig.cache
