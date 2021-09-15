@@ -6,9 +6,12 @@ namespace Kartinki
     {
         static void Main(string[] args)
         {
-            int row = 3;
+            int imagesInRow = 3;
             int imagesCount = 52;
-            Console.WriteLine(imagesCount / row+" полностью заполненных рядов и останется " +imagesCount%row+" картинка(и)");
+            int countFullRow = imagesCount/imagesInRow;
+            int countExtraImages = imagesCount%imagesInRow; 
+            
+            Console.WriteLine(countFullRow+" полностью заполненных рядов и останется " +countExtraImages+" картинка(и)");
         }
     }
 }

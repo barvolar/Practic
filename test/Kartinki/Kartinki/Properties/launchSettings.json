@@ -1,7 +1,7 @@
 {
   "profiles": {
     "Kartinki": {
-      "commandName": "Executable"
+      "commandName": "Project"
     }
   }
 }
