@@ -1,0 +1,16 @@
+E:\Learn\Polycliniс\Polycliniс\bin\Debug\net5.0\Polycliniс.exe
+E:\Learn\Polycliniс\Polycliniс\bin\Debug\net5.0\Polycliniс.deps.json
+E:\Learn\Polycliniс\Polycliniс\bin\Debug\net5.0\Polycliniс.runtimeconfig.json
+E:\Learn\Polycliniс\Polycliniс\bin\Debug\net5.0\Polycliniс.runtimeconfig.dev.json
+E:\Learn\Polycliniс\Polycliniс\bin\Debug\net5.0\Polycliniс.dll
+E:\Learn\Polycliniс\Polycliniс\bin\Debug\net5.0\ref\Polycliniс.dll
+E:\Learn\Polycliniс\Polycliniс\bin\Debug\net5.0\Polycliniс.pdb
+E:\Learn\Polycliniс\Polycliniс\obj\Debug\net5.0\Polycliniс.csprojAssemblyReference.cache
+E:\Learn\Polycliniс\Polycliniс\obj\Debug\net5.0\Polycliniс.GeneratedMSBuildEditorConfig.editorconfig
+E:\Learn\Polycliniс\Polycliniс\obj\Debug\net5.0\Polycliniс.AssemblyInfoInputs.cache
+E:\Learn\Polycliniс\Polycliniс\obj\Debug\net5.0\Polycliniс.AssemblyInfo.cs
+E:\Learn\Polycliniс\Polycliniс\obj\Debug\net5.0\Polycliniс.csproj.CoreCompileInputs.cache
+E:\Learn\Polycliniс\Polycliniс\obj\Debug\net5.0\Polycliniс.dll
+E:\Learn\Polycliniс\Polycliniс\obj\Debug\net5.0\ref\Polycliniс.dll
+E:\Learn\Polycliniс\Polycliniс\obj\Debug\net5.0\Polycliniс.pdb
+E:\Learn\Polycliniс\Polycliniс\obj\Debug\net5.0\Polycliniс.genruntimeconfig.cache
