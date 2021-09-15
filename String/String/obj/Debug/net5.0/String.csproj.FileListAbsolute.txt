@@ -1,0 +1,16 @@
+E:\Learn\String\String\bin\Debug\net5.0\String.exe
+E:\Learn\String\String\bin\Debug\net5.0\String.deps.json
+E:\Learn\String\String\bin\Debug\net5.0\String.runtimeconfig.json
+E:\Learn\String\String\bin\Debug\net5.0\String.runtimeconfig.dev.json
+E:\Learn\String\String\bin\Debug\net5.0\String.dll
+E:\Learn\String\String\bin\Debug\net5.0\ref\String.dll
+E:\Learn\String\String\bin\Debug\net5.0\String.pdb
+E:\Learn\String\String\obj\Debug\net5.0\String.csprojAssemblyReference.cache
+E:\Learn\String\String\obj\Debug\net5.0\String.GeneratedMSBuildEditorConfig.editorconfig
+E:\Learn\String\String\obj\Debug\net5.0\String.AssemblyInfoInputs.cache
+E:\Learn\String\String\obj\Debug\net5.0\String.AssemblyInfo.cs
+E:\Learn\String\String\obj\Debug\net5.0\String.csproj.CoreCompileInputs.cache
+E:\Learn\String\String\obj\Debug\net5.0\String.dll
+E:\Learn\String\String\obj\Debug\net5.0\ref\String.dll
+E:\Learn\String\String\obj\Debug\net5.0\String.pdb
+E:\Learn\String\String\obj\Debug\net5.0\String.genruntimeconfig.cache

@@ -21,7 +21,7 @@ namespace String
             Console.WriteLine("Кто вы по знаку задиака?");
             string zodiak = Console.ReadLine();
 
-            Console.WriteLine("Как вас зовут?");
+            Console.WriteLine("Вас зовут "+name+". Вам "+age+" лет, по знаку задиака вы "+zodiak+", живёте в "+placeLive+" и профессия ваша "+profession);
         }
     }
 }
