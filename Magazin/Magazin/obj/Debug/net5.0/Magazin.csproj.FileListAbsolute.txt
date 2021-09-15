@@ -1,0 +1,16 @@
+E:\Learn\Magazin\Magazin\bin\Debug\net5.0\Magazin.exe
+E:\Learn\Magazin\Magazin\bin\Debug\net5.0\Magazin.deps.json
+E:\Learn\Magazin\Magazin\bin\Debug\net5.0\Magazin.runtimeconfig.json
+E:\Learn\Magazin\Magazin\bin\Debug\net5.0\Magazin.runtimeconfig.dev.json
+E:\Learn\Magazin\Magazin\bin\Debug\net5.0\Magazin.dll
+E:\Learn\Magazin\Magazin\bin\Debug\net5.0\ref\Magazin.dll
+E:\Learn\Magazin\Magazin\bin\Debug\net5.0\Magazin.pdb
+E:\Learn\Magazin\Magazin\obj\Debug\net5.0\Magazin.csprojAssemblyReference.cache
+E:\Learn\Magazin\Magazin\obj\Debug\net5.0\Magazin.GeneratedMSBuildEditorConfig.editorconfig
+E:\Learn\Magazin\Magazin\obj\Debug\net5.0\Magazin.AssemblyInfoInputs.cache
+E:\Learn\Magazin\Magazin\obj\Debug\net5.0\Magazin.AssemblyInfo.cs
+E:\Learn\Magazin\Magazin\obj\Debug\net5.0\Magazin.csproj.CoreCompileInputs.cache
+E:\Learn\Magazin\Magazin\obj\Debug\net5.0\Magazin.dll
+E:\Learn\Magazin\Magazin\obj\Debug\net5.0\ref\Magazin.dll
+E:\Learn\Magazin\Magazin\obj\Debug\net5.0\Magazin.pdb
+E:\Learn\Magazin\Magazin\obj\Debug\net5.0\Magazin.genruntimeconfig.cache
