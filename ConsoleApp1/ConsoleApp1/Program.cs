@@ -9,8 +9,8 @@ namespace ConsoleApp1
             string nameUser;
             char decor;
             int longName;
-            int indexUpString=0;
-            int indexDownString = 0;
+            int longUpString=0;
+            int longDownString = 0;
 
             Console.WriteLine("Введите имя");
             nameUser = Console.ReadLine();
@@ -19,16 +19,16 @@ namespace ConsoleApp1
             Console.WriteLine("Выберите символ для декора");
             decor =Convert.ToChar( Console.ReadLine());
             
-            while (indexUpString<=longName)
+            while (longUpString<=longName)
             {
                 Console.Write(decor);
-                indexUpString++;
+                longUpString++;
             }
             Console.WriteLine(("\n"+decor)+nameUser+decor);
-            while (indexDownString <= longName)
+            while (longDownString <= longName)
             {
                 Console.Write(decor);
-                indexDownString++;
+                longDownString++;
             }
 
         }
