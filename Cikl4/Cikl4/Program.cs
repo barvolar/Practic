@@ -15,7 +15,7 @@ namespace Cikl4
             userInput = Console.ReadLine();
             while (userInput != "Exit")
             {
-                Console.WriteLine("\n 1 = Set Name \n 2 = Set Age \n 3 = Set Password \n 4 = Check Information");
+
                 switch (userInput)
                 {
                     case "0":
@@ -24,7 +24,7 @@ namespace Cikl4
                         break;
                     case "1":
                         Console.WriteLine("Введите ваше имя");
-                        name = Console.ReadLine();                        
+                        name = Console.ReadLine();
                         userInput = Console.ReadLine();
                         break;
                     case "2":
@@ -42,10 +42,11 @@ namespace Cikl4
                         userInput = Console.ReadLine();
                         break;
                     default:
-                        Console.WriteLine("Введите указанное выше число");
+                        Console.WriteLine("Выберите один из вариантов \n 1 = Set Name \n 2 = Set Age \n 3 = Set Password \n 4 = Check Information");
                         userInput = Console.ReadLine();
                         break;
                 }
+
             }
         }
     }
