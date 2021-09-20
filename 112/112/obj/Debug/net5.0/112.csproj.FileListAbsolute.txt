@@ -1,0 +1,15 @@
+E:\Learn\112\112\bin\Debug\net5.0\112.exe
+E:\Learn\112\112\bin\Debug\net5.0\112.deps.json
+E:\Learn\112\112\bin\Debug\net5.0\112.runtimeconfig.json
+E:\Learn\112\112\bin\Debug\net5.0\112.runtimeconfig.dev.json
+E:\Learn\112\112\bin\Debug\net5.0\112.dll
+E:\Learn\112\112\bin\Debug\net5.0\ref\112.dll
+E:\Learn\112\112\bin\Debug\net5.0\112.pdb
+E:\Learn\112\112\obj\Debug\net5.0\112.GeneratedMSBuildEditorConfig.editorconfig
+E:\Learn\112\112\obj\Debug\net5.0\112.AssemblyInfoInputs.cache
+E:\Learn\112\112\obj\Debug\net5.0\112.AssemblyInfo.cs
+E:\Learn\112\112\obj\Debug\net5.0\112.csproj.CoreCompileInputs.cache
+E:\Learn\112\112\obj\Debug\net5.0\112.dll
+E:\Learn\112\112\obj\Debug\net5.0\ref\112.dll
+E:\Learn\112\112\obj\Debug\net5.0\112.pdb
+E:\Learn\112\112\obj\Debug\net5.0\112.genruntimeconfig.cache
