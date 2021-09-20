@@ -10,7 +10,7 @@ namespace Cikl1
         {
             int[,] matrix = new int[10, 10];
             int maxNumber = Int32.MinValue;
-            Random rand = new Random();
+            Random random = new Random();
 
             Console.WriteLine("Начальная матрица ");
 
@@ -18,24 +18,24 @@ namespace Cikl1
             {
                 for (int j = 0; j < matrix.GetLength(1); j++)
                 {
-                    matrix[i, j] = rand.Next(10,100);
+                    matrix[i, j] = random.Next(10,100);
                     Console.Write(matrix[i, j] + " ");
                     if (maxNumber < matrix[i, j])
                     {
                         maxNumber = matrix[i, j];
-                    }
-                    
+                    }                   
                 }
                 Console.WriteLine();
-            }
-            
+            }           
 
             Console.WriteLine("\nМаксимальное числов ней = "+maxNumber+"\nНовая матрица");
+
             for(int i = 0; i < matrix.GetLength(0); i++)
             {
                 for(int j = 0; j < matrix.GetLength(1); j++)
                 {
-                    if (matrix[i, j] == maxNumber) matrix[i, j] = 0;
+                    if (matrix[i, j] == maxNumber) 
+                        matrix[i, j] = 0;
                     Console.Write(matrix[i, j]+" ");
                 }
                 Console.WriteLine();
