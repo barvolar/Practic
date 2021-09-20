@@ -1,0 +1,16 @@
+E:\Learn\CONSOlgame\CONSOlgame\bin\Debug\net5.0\CONSOlgame.exe
+E:\Learn\CONSOlgame\CONSOlgame\bin\Debug\net5.0\CONSOlgame.deps.json
+E:\Learn\CONSOlgame\CONSOlgame\bin\Debug\net5.0\CONSOlgame.runtimeconfig.json
+E:\Learn\CONSOlgame\CONSOlgame\bin\Debug\net5.0\CONSOlgame.runtimeconfig.dev.json
+E:\Learn\CONSOlgame\CONSOlgame\bin\Debug\net5.0\CONSOlgame.dll
+E:\Learn\CONSOlgame\CONSOlgame\bin\Debug\net5.0\ref\CONSOlgame.dll
+E:\Learn\CONSOlgame\CONSOlgame\bin\Debug\net5.0\CONSOlgame.pdb
+E:\Learn\CONSOlgame\CONSOlgame\obj\Debug\net5.0\CONSOlgame.csprojAssemblyReference.cache
+E:\Learn\CONSOlgame\CONSOlgame\obj\Debug\net5.0\CONSOlgame.GeneratedMSBuildEditorConfig.editorconfig
+E:\Learn\CONSOlgame\CONSOlgame\obj\Debug\net5.0\CONSOlgame.AssemblyInfoInputs.cache
+E:\Learn\CONSOlgame\CONSOlgame\obj\Debug\net5.0\CONSOlgame.AssemblyInfo.cs
+E:\Learn\CONSOlgame\CONSOlgame\obj\Debug\net5.0\CONSOlgame.csproj.CoreCompileInputs.cache
+E:\Learn\CONSOlgame\CONSOlgame\obj\Debug\net5.0\CONSOlgame.dll
+E:\Learn\CONSOlgame\CONSOlgame\obj\Debug\net5.0\ref\CONSOlgame.dll
+E:\Learn\CONSOlgame\CONSOlgame\obj\Debug\net5.0\CONSOlgame.pdb
+E:\Learn\CONSOlgame\CONSOlgame\obj\Debug\net5.0\CONSOlgame.genruntimeconfig.cache
