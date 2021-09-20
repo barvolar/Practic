@@ -8,21 +8,21 @@ namespace Cikl1
         //Массив под измененную версию не нужен.
         static void Main(string[] args)
         {
-            int[,] a = new int[10, 10];
+            int[,] matrix = new int[10, 10];
             int maxNumber = Int32.MinValue;
             Random rand = new Random();
 
             Console.WriteLine("Начальная матрица ");
 
-            for (int i = 0; i < a.GetLength(0); i++)
+            for (int i = 0; i < matrix.GetLength(0); i++)
             {
-                for (int j = 0; j < a.GetLength(1); j++)
+                for (int j = 0; j < matrix.GetLength(1); j++)
                 {
-                    a[i, j] = rand.Next(10,100);
-                    Console.Write(a[i, j] + " ");
-                    if (maxNumber < a[i, j])
+                    matrix[i, j] = rand.Next(10,100);
+                    Console.Write(matrix[i, j] + " ");
+                    if (maxNumber < matrix[i, j])
                     {
-                        maxNumber = a[i, j];
+                        maxNumber = matrix[i, j];
                     }
                     
                 }
@@ -31,12 +31,12 @@ namespace Cikl1
             
 
             Console.WriteLine("\nМаксимальное числов ней = "+maxNumber+"\nНовая матрица");
-            for(int i = 0; i < a.GetLength(0); i++)
+            for(int i = 0; i < matrix.GetLength(0); i++)
             {
-                for(int j = 0; j < a.GetLength(1); j++)
+                for(int j = 0; j < matrix.GetLength(1); j++)
                 {
-                    if (a[i, j] == maxNumber) a[i, j] = 0;
-                    Console.Write(a[i, j]+" ");
+                    if (matrix[i, j] == maxNumber) matrix[i, j] = 0;
+                    Console.Write(matrix[i, j]+" ");
                 }
                 Console.WriteLine();
             }
