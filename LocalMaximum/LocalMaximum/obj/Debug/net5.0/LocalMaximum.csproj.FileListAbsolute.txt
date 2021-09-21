@@ -1,0 +1,16 @@
+E:\Learn\LocalMaximum\LocalMaximum\bin\Debug\net5.0\LocalMaximum.exe
+E:\Learn\LocalMaximum\LocalMaximum\bin\Debug\net5.0\LocalMaximum.deps.json
+E:\Learn\LocalMaximum\LocalMaximum\bin\Debug\net5.0\LocalMaximum.runtimeconfig.json
+E:\Learn\LocalMaximum\LocalMaximum\bin\Debug\net5.0\LocalMaximum.runtimeconfig.dev.json
+E:\Learn\LocalMaximum\LocalMaximum\bin\Debug\net5.0\LocalMaximum.dll
+E:\Learn\LocalMaximum\LocalMaximum\bin\Debug\net5.0\ref\LocalMaximum.dll
+E:\Learn\LocalMaximum\LocalMaximum\bin\Debug\net5.0\LocalMaximum.pdb
+E:\Learn\LocalMaximum\LocalMaximum\obj\Debug\net5.0\LocalMaximum.csprojAssemblyReference.cache
+E:\Learn\LocalMaximum\LocalMaximum\obj\Debug\net5.0\LocalMaximum.GeneratedMSBuildEditorConfig.editorconfig
+E:\Learn\LocalMaximum\LocalMaximum\obj\Debug\net5.0\LocalMaximum.AssemblyInfoInputs.cache
+E:\Learn\LocalMaximum\LocalMaximum\obj\Debug\net5.0\LocalMaximum.AssemblyInfo.cs
+E:\Learn\LocalMaximum\LocalMaximum\obj\Debug\net5.0\LocalMaximum.csproj.CoreCompileInputs.cache
+E:\Learn\LocalMaximum\LocalMaximum\obj\Debug\net5.0\LocalMaximum.dll
+E:\Learn\LocalMaximum\LocalMaximum\obj\Debug\net5.0\ref\LocalMaximum.dll
+E:\Learn\LocalMaximum\LocalMaximum\obj\Debug\net5.0\LocalMaximum.pdb
+E:\Learn\LocalMaximum\LocalMaximum\obj\Debug\net5.0\LocalMaximum.genruntimeconfig.cache
