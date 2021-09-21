@@ -19,11 +19,13 @@ namespace DinamicArray
                 switch (userInput)
                 {
                     case "Sum":
+                        Console.WriteLine("Massiv");
                         for (int i = 0; i < usserArray.Length; i++)
                         {
-                            Console.Write(usserArray[i] + " ");
+                            Console.Write(+usserArray[i] + " ");
                             sum += usserArray[i];
                         }
+                        Console.WriteLine("\nСумма массива = " + sum);
                         sum = 0;
                         break;
 
