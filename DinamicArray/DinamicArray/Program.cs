@@ -45,10 +45,8 @@ namespace DinamicArray
                         }
                         tempArray[tempArray.Length - 1] = userNumber;
                         usserArray = tempArray;
-                        break;
-                    
-                }
-              
+                        break;                    
+                }              
             }                     
         }
     }
