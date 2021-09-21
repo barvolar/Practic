@@ -1,0 +1,16 @@
+E:\Learn\DinamicArray\DinamicArray\bin\Debug\net5.0\DinamicArray.exe
+E:\Learn\DinamicArray\DinamicArray\bin\Debug\net5.0\DinamicArray.deps.json
+E:\Learn\DinamicArray\DinamicArray\bin\Debug\net5.0\DinamicArray.runtimeconfig.json
+E:\Learn\DinamicArray\DinamicArray\bin\Debug\net5.0\DinamicArray.runtimeconfig.dev.json
+E:\Learn\DinamicArray\DinamicArray\bin\Debug\net5.0\DinamicArray.dll
+E:\Learn\DinamicArray\DinamicArray\bin\Debug\net5.0\ref\DinamicArray.dll
+E:\Learn\DinamicArray\DinamicArray\bin\Debug\net5.0\DinamicArray.pdb
+E:\Learn\DinamicArray\DinamicArray\obj\Debug\net5.0\DinamicArray.csprojAssemblyReference.cache
+E:\Learn\DinamicArray\DinamicArray\obj\Debug\net5.0\DinamicArray.GeneratedMSBuildEditorConfig.editorconfig
+E:\Learn\DinamicArray\DinamicArray\obj\Debug\net5.0\DinamicArray.AssemblyInfoInputs.cache
+E:\Learn\DinamicArray\DinamicArray\obj\Debug\net5.0\DinamicArray.AssemblyInfo.cs
+E:\Learn\DinamicArray\DinamicArray\obj\Debug\net5.0\DinamicArray.csproj.CoreCompileInputs.cache
+E:\Learn\DinamicArray\DinamicArray\obj\Debug\net5.0\DinamicArray.dll
+E:\Learn\DinamicArray\DinamicArray\obj\Debug\net5.0\ref\DinamicArray.dll
+E:\Learn\DinamicArray\DinamicArray\obj\Debug\net5.0\DinamicArray.pdb
+E:\Learn\DinamicArray\DinamicArray\obj\Debug\net5.0\DinamicArray.genruntimeconfig.cache
