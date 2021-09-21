@@ -6,61 +6,40 @@ namespace DinamicArray
     {
         static void Main(string[] args)
         {
-          
-            //string stro4ka;
-            //bool tryy;
-            //int Parse(string stro4ka);
 
-
-            string[] userArray = new string[0];
-            string exit = "Exit";
-            string sum = "sum";
-            int intSum = 0;
-
+            string input ;
+            int sum=0;
+            int userNumber;
+            int[] usserArray = new int[0];
             while (true)
             {
-                string userInput = Console.ReadLine();
-                string[] tempArray = new string[userArray.Length + 1];
+               
+                input = Console.ReadLine();
 
-                for (int i = 0; i < userArray.Length; i++)
+                if (input != "Exit")
                 {
-                    tempArray[i] = userArray[i];
-                }
-                tempArray[tempArray.Length - 1] = userInput;
-                userArray = tempArray;
-                Console.WriteLine(userArray.Length);
+                    userNumber =  Convert.ToInt32(input);
+                    int[] tempArray = new int[usserArray.Length + 1];
 
-                if (userInput == exit)
-                {
-                    break;
+                    for (int i = 0; i < usserArray.Length; i++)
+                    {
+                        tempArray[i] = usserArray[i];
+                    }
+                    tempArray[tempArray.Length - 1] = userNumber;
+                    usserArray = tempArray;
+                    Console.WriteLine(usserArray.Length);
                 }
-                if (userInput == "sum")
+                else if (input == "Sum")
                 {
-                    int[] tempIntArray = new int[userArray.Length];
-                    for (int i = 0; i < userArray.Length; i++)
+                    for (int i = 0; i < usserArray.Length; i++)
                     {
-                        tempIntArray[i] = Int32.Parse(userArray[i]);
+                        sum += usserArray[i];
                     }
-                    for (int i = 0; i < tempIntArray.Length; i++)
-                    {
-                        intSum += tempIntArray[i];
-                    }
-                    Console.WriteLine(intSum);
+                    Console.WriteLine($"Сумма = { sum}") ;
                 }
 
             }
-
-
-            //for (int i = 0; i < userArray.Length; i++)
-            //{
-            //   tempArray[i] = userArray[i];
-
-
-            //}
-            //tempArray[tempArray.Length - 1] = 3;
-            //userArray = tempArray;
-            //Console.WriteLine($"Длина массива {userArray.Length}");
-
+                      
         }
     }
 }
