@@ -12,8 +12,7 @@ namespace DinamicArray
             int userNumber;
             int[] usserArray = new int[0];
             while (true)
-            {
-               
+            {               
                 input = Console.ReadLine();
 
                 if (input != "Exit")
@@ -37,9 +36,7 @@ namespace DinamicArray
                     }
                     Console.WriteLine($"Сумма = { sum}") ;
                 }
-
-            }
-                      
+            }                     
         }
     }
 }
