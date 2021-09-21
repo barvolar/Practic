@@ -7,35 +7,46 @@ namespace DinamicArray
         static void Main(string[] args)
         {
 
-            string input ;
+            string userInput ;
             int sum=0;
             int userNumber;
             int[] usserArray = new int[0];
-            while (true)
+            bool work = true;
+
+            while (work)
             {               
-                input = Console.ReadLine();
-
-                if (input != "Exit")
+                userInput = Console.ReadLine();
+                switch (userInput)
                 {
-                    userNumber =  Convert.ToInt32(input);
-                    int[] tempArray = new int[usserArray.Length + 1];
+                    case "Sum":
+                        for (int i = 0; i < usserArray.Length; i++)
+                        {
+                            Console.Write(usserArray[i] + " ");
+                            sum += usserArray[i];
+                        }
+                        sum = 0;
+                        break;
 
-                    for (int i = 0; i < usserArray.Length; i++)
-                    {
-                        tempArray[i] = usserArray[i];
-                    }
-                    tempArray[tempArray.Length - 1] = userNumber;
-                    usserArray = tempArray;
-                    Console.WriteLine(usserArray.Length);
+                    case "Exit":
+                        Console.WriteLine("Завершение , нажмите что-нибудь");
+                        Console.ReadKey();
+                        work = false;
+                        break;
+
+                    default:
+                        userNumber = Convert.ToInt32(userInput);
+                        int[] tempArray = new int[usserArray.Length + 1];
+
+                        for (int i = 0; i < usserArray.Length; i++)
+                        {
+                            tempArray[i] = usserArray[i];                           
+                        }
+                        tempArray[tempArray.Length - 1] = userNumber;
+                        usserArray = tempArray;
+                        break;
+                    
                 }
-                else if (input == "Sum")
-                {
-                    for (int i = 0; i < usserArray.Length; i++)
-                    {
-                        sum += usserArray[i];
-                    }
-                    Console.WriteLine($"Сумма = { sum}") ;
-                }
+              
             }                     
         }
     }
