@@ -11,15 +11,16 @@ namespace String
             string[] post = new string[0];
             string addName ;
             string addPost;
+            bool isRun = true;
 
-            while (true)
+            while (isRun)
             {
                 
                 Console.WriteLine("\n1 - добавить досье\n2 - показать сотрудников\n3 - удалить все досье\n4 - найти сотрудника\n5 - выход");
-                int userInput = Convert.ToInt32(Console.ReadLine());
+                string userInput = Console.ReadLine();
                 Console.Clear();
              
-                if (userInput == 1) 
+                if (userInput == "1") 
                 {
                     Console.WriteLine("\nДобавьте сотрудника, введите имя");
                     addName = Console.ReadLine();
@@ -28,44 +29,49 @@ namespace String
                     addPost = Console.ReadLine();
                     AddWorker(ref post, addPost);
                 }
-                if (userInput == 2)
+                if (userInput == "2")
                 {
-                    Console.WriteLine("\nСотрудники : ");
-
-                    for (int i = 0; i < name.Length; i++)
-                    {
-                        Console.Write($" {i+1}) {name[i]} - {post[i]};") ;
-                    }
+                    ShowWorker(ref name, ref post); 
                 }
-                if (userInput == 3)
+                if (userInput == "3")
                 {
                     ClearArray(ref name);
                     ClearArray(ref post);
                 }
-                if (userInput == 4)
+                if (userInput == "4")
                 {
                     Console.WriteLine("Введите имя сотруднка");
                     string input = Console.ReadLine();
                     FindWorker(input,ref name,ref post);
 
                 }
-                if (userInput == 5)
+                if (userInput == "5")
                 {
-                    break;
+                    Console.WriteLine("Всего доброго");
+                    isRun = false;
                 }
                 
             }
 
         }
-        static void AddWorker(ref string[] name, string addName)
+        static void ShowWorker(ref string[] arrayName,ref string[] arrayPost)
         {
-            string[] tempArray = new string[name.Length + 1];
-            for (int i = 0; i < name.Length; i++)
+            Console.WriteLine("\nСотрудники : ");
+
+            for (int i = 0; i < arrayName.Length; i++)
             {
-                tempArray[i] = name[i];
+                Console.Write($" {i + 1}) {arrayName[i]} - {arrayPost[i]};");
+            }
+        }
+        static void AddWorker(ref string[] array, string addName)
+        {
+            string[] tempArray = new string[array.Length + 1];
+            for (int i = 0; i < array.Length; i++)
+            {
+                tempArray[i] = array[i];
             }
             tempArray[tempArray.Length - 1] = addName;
-            name = tempArray;
+            array = tempArray;
         }
         static void ClearArray(ref string[] array)
         {
