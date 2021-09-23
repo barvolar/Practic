@@ -13,24 +13,29 @@ namespace CONSOlga
 
         static void ShowHealthBar(int value, int maxValue, ConsoleColor color)
         {
-            ConsoleColor defoultColor = Console.BackgroundColor;
-            Console.SetCursorPosition(2, 10);
             string bar = "";
+            ConsoleColor defoultColor = Console.BackgroundColor;
+
+            Console.SetCursorPosition(2, 10);            
             Console.Write("HP\n|");
             Console.BackgroundColor = color;
+
             for (int i = 0; i < value; i++)
             {
                 bar += " ";
             }
            
             Console.Write(bar);
+
             bar = "";
 
             Console.BackgroundColor = ConsoleColor.White;
+
             for (int i = value; i < maxValue; i++)
             {
                 bar += " ";
             }
+
             Console.Write(bar);
             Console.BackgroundColor = defoultColor;
             Console.Write("|");
