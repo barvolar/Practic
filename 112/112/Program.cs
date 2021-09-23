@@ -6,33 +6,34 @@ namespace CONSOlga
     {
         static void Main(string[] args)
         {
-            //Дан двумерный массив.
-            //Вычислить сумму второй строки и произведение первого столбца. Вывести исходную матрицу и результаты вычислений.
-            int[,] arrays = { { 1, 2, 3, 4 }, { 1, 3, 5, 7 }, { 2, 4, 6, 8 }, { 5, 6, 7, 8 }, { 1, 3, 4, 5 } };
-            int sum = 0;
-            int multiply = 1;
+            int myHealth=40;
+            int maxHealth=100;
+            ShowHealthBar(myHealth, maxHealth, ConsoleColor.Green);
+        }
 
-            for (int i = 0; i < arrays.GetLength(0); i++)
+        static void ShowHealthBar(int value, int maxValue, ConsoleColor color)
+        {
+            ConsoleColor defoultColor = Console.BackgroundColor;
+            Console.SetCursorPosition(2, 10);
+            string bar = "";
+            Console.Write("HP\n|");
+            Console.BackgroundColor = color;
+            for (int i = 0; i < value; i++)
             {
-                for (int j = 0; j < arrays.GetLength(1); j++)
-                {
-                    Console.Write(arrays[i, j] + " ");
-                }
-                Console.WriteLine();
+                bar += " ";
             }
+           
+            Console.Write(bar);
+            bar = "";
 
-            for (int i = 0; i < arrays.GetLength(0); i++)
+            Console.BackgroundColor = ConsoleColor.White;
+            for (int i = value; i < maxValue; i++)
             {
-                sum += arrays[1, i];
-                Console.WriteLine();
+                bar += " ";
             }
-            for (int i = 0; i < arrays.GetLength(1); i++)
-            {
-                multiply *= arrays[i, 0];
-                Console.WriteLine();
-            }
-            Console.WriteLine("Сумма второй строки = " + sum);
-            Console.WriteLine("Произведение первого столбца = " + multiply);
+            Console.Write(bar);
+            Console.BackgroundColor = defoultColor;
+            Console.Write("|");
         }
     }
 }
