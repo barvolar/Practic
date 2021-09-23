@@ -34,7 +34,7 @@ namespace String
 
                     for (int i = 0; i < name.Length; i++)
                     {
-                        Console.Write($" {i+1}) {name[i]} -- {post[i]};") ;
+                        Console.Write($" {i+1}) {name[i]} - {post[i]};") ;
                     }
                 }
                 if (userInput == 3)
