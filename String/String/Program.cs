@@ -37,7 +37,7 @@ namespace String
                         Console.Write($" {i+1}) {name[i]} -- {post[i]};") ;
                     }
                 }
-                if(userInput == 3)
+                if (userInput == 3)
                 {
                     ClearArray(ref name);
                     ClearArray(ref post);
