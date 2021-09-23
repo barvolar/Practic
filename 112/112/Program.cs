@@ -6,9 +6,9 @@ namespace CONSOlga
     {
         static void Main(string[] args)
         {
-            int myHealth=40;
+            int currentHealth=40;
             int maxHealth=100;
-            ShowHealthBar(myHealth, maxHealth, ConsoleColor.Green);
+            ShowHealthBar(currentHealth, maxHealth, ConsoleColor.Green);
         }
 
         static void ShowHealthBar(int value, int maxValue, ConsoleColor color)
@@ -33,7 +33,7 @@ namespace CONSOlga
 
             for (int i = value; i < maxValue; i++)
             {
-                bar += " ";
+                bar += "_";
             }
 
             Console.Write(bar);
