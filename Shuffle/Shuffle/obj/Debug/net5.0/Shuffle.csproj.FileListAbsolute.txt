@@ -1,0 +1,16 @@
+E:\Learn\Shuffle\Shuffle\bin\Debug\net5.0\Shuffle.exe
+E:\Learn\Shuffle\Shuffle\bin\Debug\net5.0\Shuffle.deps.json
+E:\Learn\Shuffle\Shuffle\bin\Debug\net5.0\Shuffle.runtimeconfig.json
+E:\Learn\Shuffle\Shuffle\bin\Debug\net5.0\Shuffle.runtimeconfig.dev.json
+E:\Learn\Shuffle\Shuffle\bin\Debug\net5.0\Shuffle.dll
+E:\Learn\Shuffle\Shuffle\bin\Debug\net5.0\ref\Shuffle.dll
+E:\Learn\Shuffle\Shuffle\bin\Debug\net5.0\Shuffle.pdb
+E:\Learn\Shuffle\Shuffle\obj\Debug\net5.0\Shuffle.csprojAssemblyReference.cache
+E:\Learn\Shuffle\Shuffle\obj\Debug\net5.0\Shuffle.GeneratedMSBuildEditorConfig.editorconfig
+E:\Learn\Shuffle\Shuffle\obj\Debug\net5.0\Shuffle.AssemblyInfoInputs.cache
+E:\Learn\Shuffle\Shuffle\obj\Debug\net5.0\Shuffle.AssemblyInfo.cs
+E:\Learn\Shuffle\Shuffle\obj\Debug\net5.0\Shuffle.csproj.CoreCompileInputs.cache
+E:\Learn\Shuffle\Shuffle\obj\Debug\net5.0\Shuffle.dll
+E:\Learn\Shuffle\Shuffle\obj\Debug\net5.0\ref\Shuffle.dll
+E:\Learn\Shuffle\Shuffle\obj\Debug\net5.0\Shuffle.pdb
+E:\Learn\Shuffle\Shuffle\obj\Debug\net5.0\Shuffle.genruntimeconfig.cache
