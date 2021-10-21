@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Learn\\PackMan\\PackMan\\PackMan.csproj": {}
+    "E:\\Learn\\Map\\Map\\Map.csproj": {}
   },
   "projects": {
-    "E:\\Learn\\PackMan\\PackMan\\PackMan.csproj": {
+    "E:\\Learn\\Map\\Map\\Map.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Learn\\PackMan\\PackMan\\PackMan.csproj",
-        "projectName": "PackMan",
-        "projectPath": "E:\\Learn\\PackMan\\PackMan\\PackMan.csproj",
+        "projectUniqueName": "E:\\Learn\\Map\\Map\\Map.csproj",
+        "projectName": "Map",
+        "projectPath": "E:\\Learn\\Map\\Map\\Map.csproj",
         "packagesPath": "C:\\Users\\Goty\\.nuget\\packages\\",
-        "outputPath": "E:\\Learn\\PackMan\\PackMan\\obj\\",
+        "outputPath": "E:\\Learn\\Map\\Map\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

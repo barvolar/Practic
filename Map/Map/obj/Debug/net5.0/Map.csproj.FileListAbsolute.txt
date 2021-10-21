@@ -1,0 +1,16 @@
+E:\Learn\Map\Map\bin\Debug\net5.0\Map.exe
+E:\Learn\Map\Map\bin\Debug\net5.0\Map.deps.json
+E:\Learn\Map\Map\bin\Debug\net5.0\Map.runtimeconfig.json
+E:\Learn\Map\Map\bin\Debug\net5.0\Map.runtimeconfig.dev.json
+E:\Learn\Map\Map\bin\Debug\net5.0\Map.dll
+E:\Learn\Map\Map\bin\Debug\net5.0\ref\Map.dll
+E:\Learn\Map\Map\bin\Debug\net5.0\Map.pdb
+E:\Learn\Map\Map\obj\Debug\net5.0\Map.csprojAssemblyReference.cache
+E:\Learn\Map\Map\obj\Debug\net5.0\Map.GeneratedMSBuildEditorConfig.editorconfig
+E:\Learn\Map\Map\obj\Debug\net5.0\Map.AssemblyInfoInputs.cache
+E:\Learn\Map\Map\obj\Debug\net5.0\Map.AssemblyInfo.cs
+E:\Learn\Map\Map\obj\Debug\net5.0\Map.csproj.CoreCompileInputs.cache
+E:\Learn\Map\Map\obj\Debug\net5.0\Map.dll
+E:\Learn\Map\Map\obj\Debug\net5.0\ref\Map.dll
+E:\Learn\Map\Map\obj\Debug\net5.0\Map.pdb
+E:\Learn\Map\Map\obj\Debug\net5.0\Map.genruntimeconfig.cache

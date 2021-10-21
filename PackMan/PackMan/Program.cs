@@ -41,19 +41,20 @@ namespace PackMan
                             packmanDY = 1;
                             break;
                     }
-                    
-                }
-                if (map[packmanX + packmanDX, packmanY + packmanDY] != '#')
-                {
-                    Console.SetCursorPosition(packmanY, packmanX);
-                    Console.Write(" ");
+                    if (map[packmanX + packmanDX, packmanY + packmanDY] != '#')
+                    {
+                        Console.SetCursorPosition(packmanY, packmanX);
+                        Console.Write(" ");
 
-                    packmanY += packmanDY;
-                    packmanX += packmanDX;
+                        packmanY += packmanDY;
+                        packmanX += packmanDX;
 
-                    Console.SetCursorPosition(packmanY, packmanX);
-                    Console.Write("G");
+                        Console.SetCursorPosition(packmanY, packmanX);
+                        Console.Write("G");
+                    }
+
                 }
+                
             }
         }
         static void DrowMap(char[,] map)
