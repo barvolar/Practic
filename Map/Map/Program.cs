@@ -18,7 +18,7 @@ namespace Map
             ShowMap(map);
 
             Console.SetCursorPosition(2, 21);
-            Console.WriteLine("A - оставить после себя $\n  S - оставить после себя %\n  D - ластик");
+            Console.WriteLine("A - оставить после себя $\n  S - оставить после себя %\n  W - оставить после себя .\n  D - ластик");
 
             while (isPlaying)
             {               
@@ -52,6 +52,9 @@ namespace Map
                             break;
                         case ConsoleKey.D:
                             box = ' ';
+                            break;
+                        case ConsoleKey.W:
+                            box = '.';
                             break;
                     }
                     if (map[playerX + playerDX, playerY + playerDY] != '#')
