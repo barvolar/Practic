@@ -1,0 +1,16 @@
+E:\Learn\TryParse\TryParse\bin\Debug\net5.0\TryParse.exe
+E:\Learn\TryParse\TryParse\bin\Debug\net5.0\TryParse.deps.json
+E:\Learn\TryParse\TryParse\bin\Debug\net5.0\TryParse.runtimeconfig.json
+E:\Learn\TryParse\TryParse\bin\Debug\net5.0\TryParse.runtimeconfig.dev.json
+E:\Learn\TryParse\TryParse\bin\Debug\net5.0\TryParse.dll
+E:\Learn\TryParse\TryParse\bin\Debug\net5.0\ref\TryParse.dll
+E:\Learn\TryParse\TryParse\bin\Debug\net5.0\TryParse.pdb
+E:\Learn\TryParse\TryParse\obj\Debug\net5.0\TryParse.csprojAssemblyReference.cache
+E:\Learn\TryParse\TryParse\obj\Debug\net5.0\TryParse.GeneratedMSBuildEditorConfig.editorconfig
+E:\Learn\TryParse\TryParse\obj\Debug\net5.0\TryParse.AssemblyInfoInputs.cache
+E:\Learn\TryParse\TryParse\obj\Debug\net5.0\TryParse.AssemblyInfo.cs
+E:\Learn\TryParse\TryParse\obj\Debug\net5.0\TryParse.csproj.CoreCompileInputs.cache
+E:\Learn\TryParse\TryParse\obj\Debug\net5.0\TryParse.dll
+E:\Learn\TryParse\TryParse\obj\Debug\net5.0\ref\TryParse.dll
+E:\Learn\TryParse\TryParse\obj\Debug\net5.0\TryParse.pdb
+E:\Learn\TryParse\TryParse\obj\Debug\net5.0\TryParse.genruntimeconfig.cache

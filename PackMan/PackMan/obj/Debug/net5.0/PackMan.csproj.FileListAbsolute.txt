@@ -1,0 +1,16 @@
+E:\Learn\PackMan\PackMan\bin\Debug\net5.0\PackMan.exe
+E:\Learn\PackMan\PackMan\bin\Debug\net5.0\PackMan.deps.json
+E:\Learn\PackMan\PackMan\bin\Debug\net5.0\PackMan.runtimeconfig.json
+E:\Learn\PackMan\PackMan\bin\Debug\net5.0\PackMan.runtimeconfig.dev.json
+E:\Learn\PackMan\PackMan\bin\Debug\net5.0\PackMan.dll
+E:\Learn\PackMan\PackMan\bin\Debug\net5.0\ref\PackMan.dll
+E:\Learn\PackMan\PackMan\bin\Debug\net5.0\PackMan.pdb
+E:\Learn\PackMan\PackMan\obj\Debug\net5.0\PackMan.csprojAssemblyReference.cache
+E:\Learn\PackMan\PackMan\obj\Debug\net5.0\PackMan.GeneratedMSBuildEditorConfig.editorconfig
+E:\Learn\PackMan\PackMan\obj\Debug\net5.0\PackMan.AssemblyInfoInputs.cache
+E:\Learn\PackMan\PackMan\obj\Debug\net5.0\PackMan.AssemblyInfo.cs
+E:\Learn\PackMan\PackMan\obj\Debug\net5.0\PackMan.csproj.CoreCompileInputs.cache
+E:\Learn\PackMan\PackMan\obj\Debug\net5.0\PackMan.dll
+E:\Learn\PackMan\PackMan\obj\Debug\net5.0\ref\PackMan.dll
+E:\Learn\PackMan\PackMan\obj\Debug\net5.0\PackMan.pdb
+E:\Learn\PackMan\PackMan\obj\Debug\net5.0\PackMan.genruntimeconfig.cache
