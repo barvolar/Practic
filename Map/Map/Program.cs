@@ -10,21 +10,18 @@ namespace Map
             bool isPlaying = true;
             int playerX, playerY;
             int playerDX = 0, playerDY = 0;
-
-         
-
             char[,] map=ReadMap("map1.txt",out playerX,out playerY);
             char box = '.';
+
             Console.CursorVisible = false;
 
-
             ShowMap(map);
+
             Console.SetCursorPosition(2, 21);
             Console.WriteLine("A - оставить после себя $\n  S - оставить после себя %\n  D - ластик");
 
             while (isPlaying)
-            {
-                
+            {               
                 if (Console.KeyAvailable)
                 {
                     ConsoleKeyInfo key = Console.ReadKey(true);
