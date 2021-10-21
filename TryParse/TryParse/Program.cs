@@ -12,11 +12,11 @@ namespace TryParse
             {
                 Console.WriteLine("Введите ваш новый пароль. Пароль должен состоять из цифр.");
                 string password = Console.ReadLine();
-                AddPassцord(password, ref isPlay);
+                AddPassword(password, ref isPlay);
             }
         }
         
-        static void AddPassцord(string txt, ref bool isPlay)
+        static void AddPassword(string txt, ref bool isPlay)
         {
             if(int.TryParse(txt, out int resul))
             {
