@@ -1,0 +1,7 @@
+E:\Learn\PersonalUp\PersonalUp\bin\Debug\PersonalUp.exe.config
+E:\Learn\PersonalUp\PersonalUp\bin\Debug\PersonalUp.exe
+E:\Learn\PersonalUp\PersonalUp\bin\Debug\PersonalUp.pdb
+E:\Learn\PersonalUp\PersonalUp\obj\Debug\PersonalUp.csprojAssemblyReference.cache
+E:\Learn\PersonalUp\PersonalUp\obj\Debug\PersonalUp.csproj.CoreCompileInputs.cache
+E:\Learn\PersonalUp\PersonalUp\obj\Debug\PersonalUp.exe
+E:\Learn\PersonalUp\PersonalUp\obj\Debug\PersonalUp.pdb
