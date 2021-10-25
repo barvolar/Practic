@@ -1,0 +1,7 @@
+E:\Learn\AppDinamicArray\AppDinamicArray\bin\Debug\AppDinamicArray.exe.config
+E:\Learn\AppDinamicArray\AppDinamicArray\bin\Debug\AppDinamicArray.exe
+E:\Learn\AppDinamicArray\AppDinamicArray\bin\Debug\AppDinamicArray.pdb
+E:\Learn\AppDinamicArray\AppDinamicArray\obj\Debug\AppDinamicArray.csprojAssemblyReference.cache
+E:\Learn\AppDinamicArray\AppDinamicArray\obj\Debug\AppDinamicArray.csproj.CoreCompileInputs.cache
+E:\Learn\AppDinamicArray\AppDinamicArray\obj\Debug\AppDinamicArray.exe
+E:\Learn\AppDinamicArray\AppDinamicArray\obj\Debug\AppDinamicArray.pdb
