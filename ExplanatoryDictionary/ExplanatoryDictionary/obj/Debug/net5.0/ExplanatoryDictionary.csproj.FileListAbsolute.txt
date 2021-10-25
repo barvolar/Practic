@@ -1,0 +1,16 @@
+E:\Learn\ExplanatoryDictionary\ExplanatoryDictionary\bin\Debug\net5.0\ExplanatoryDictionary.exe
+E:\Learn\ExplanatoryDictionary\ExplanatoryDictionary\bin\Debug\net5.0\ExplanatoryDictionary.deps.json
+E:\Learn\ExplanatoryDictionary\ExplanatoryDictionary\bin\Debug\net5.0\ExplanatoryDictionary.runtimeconfig.json
+E:\Learn\ExplanatoryDictionary\ExplanatoryDictionary\bin\Debug\net5.0\ExplanatoryDictionary.runtimeconfig.dev.json
+E:\Learn\ExplanatoryDictionary\ExplanatoryDictionary\bin\Debug\net5.0\ExplanatoryDictionary.dll
+E:\Learn\ExplanatoryDictionary\ExplanatoryDictionary\bin\Debug\net5.0\ref\ExplanatoryDictionary.dll
+E:\Learn\ExplanatoryDictionary\ExplanatoryDictionary\bin\Debug\net5.0\ExplanatoryDictionary.pdb
+E:\Learn\ExplanatoryDictionary\ExplanatoryDictionary\obj\Debug\net5.0\ExplanatoryDictionary.csprojAssemblyReference.cache
+E:\Learn\ExplanatoryDictionary\ExplanatoryDictionary\obj\Debug\net5.0\ExplanatoryDictionary.GeneratedMSBuildEditorConfig.editorconfig
+E:\Learn\ExplanatoryDictionary\ExplanatoryDictionary\obj\Debug\net5.0\ExplanatoryDictionary.AssemblyInfoInputs.cache
+E:\Learn\ExplanatoryDictionary\ExplanatoryDictionary\obj\Debug\net5.0\ExplanatoryDictionary.AssemblyInfo.cs
+E:\Learn\ExplanatoryDictionary\ExplanatoryDictionary\obj\Debug\net5.0\ExplanatoryDictionary.csproj.CoreCompileInputs.cache
+E:\Learn\ExplanatoryDictionary\ExplanatoryDictionary\obj\Debug\net5.0\ExplanatoryDictionary.dll
+E:\Learn\ExplanatoryDictionary\ExplanatoryDictionary\obj\Debug\net5.0\ref\ExplanatoryDictionary.dll
+E:\Learn\ExplanatoryDictionary\ExplanatoryDictionary\obj\Debug\net5.0\ExplanatoryDictionary.pdb
+E:\Learn\ExplanatoryDictionary\ExplanatoryDictionary\obj\Debug\net5.0\ExplanatoryDictionary.genruntimeconfig.cache
