@@ -8,9 +8,11 @@ namespace Map
         static void Main(string[] args)
         {
             bool isPlaying = true;
-            int playerX, playerY;
-            int playerDX = 0, playerDY = 0;
-            char[,] map=ReadMap("map1.txt",out playerX,out playerY);
+            int playerPositinX;
+            int playerPositionY;
+            int playerDirectionX = 0;
+            int playerDirectionY = 0;
+            char[,] map=ReadMap("map1.txt",out playerPositinX,out playerPositionY);
             char box = '.';
 
             Console.CursorVisible = false;
@@ -29,20 +31,20 @@ namespace Map
                     switch (key.Key)
                     {
                         case ConsoleKey.UpArrow:
-                            playerDX = -1;
-                            playerDY = 0;
+                            playerDirectionX = -1;
+                            playerDirectionY = 0;
                             break;
                         case ConsoleKey.DownArrow:
-                            playerDX = 1;
-                            playerDY = 0;
+                            playerDirectionX = 1;
+                            playerDirectionY = 0;
                             break;
                         case ConsoleKey.LeftArrow:
-                            playerDX = 0;
-                            playerDY = -1;
+                            playerDirectionX = 0;
+                            playerDirectionY = -1;
                             break;
                         case ConsoleKey.RightArrow:
-                            playerDX = 0;
-                            playerDY = 1;
+                            playerDirectionX = 0;
+                            playerDirectionY = 1;
                             break;
                         case ConsoleKey.A:
                             box = '$';
@@ -57,14 +59,12 @@ namespace Map
                             box = '.';
                             break;
                     }
-                    if (map[playerX + playerDX, playerY + playerDY] != '#')
+                    if (map[playerPositinX + playerDirectionX, playerPositionY + playerDirectionY] != '#')
                     {
-                        Move(ref playerX, ref playerY, playerDX, playerDY,box);
-                    }
-                    
+                        Move(ref playerPositinX, ref playerPositionY, playerDirectionX, playerDirectionY,box);
+                    }                   
                 }
             }
-
         }
         static void Move(ref int x,ref int y, int directionX,  int directionY,char box)
         {
@@ -111,7 +111,6 @@ namespace Map
                 }
                 Console.WriteLine();
             }
-        }
-        
+        }       
     }
 }
