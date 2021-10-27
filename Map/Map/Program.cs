@@ -12,8 +12,8 @@ namespace Map
             int playerPositionY;
             int playerDirectionX = 0;
             int playerDirectionY = 0;
-            char[,] map=ReadMap("map1.txt",out playerPositinX,out playerPositionY);
-            char box = '.';
+            char[,] map = ReadMap("map1.txt", out playerPositinX, out playerPositionY);
+            char mapElement = '.';
 
             Console.CursorVisible = false;
 
@@ -23,50 +23,60 @@ namespace Map
             Console.WriteLine("A - оставить после себя $\n  S - оставить после себя %\n  W - оставить после себя .\n  D - ластик");
 
             while (isPlaying)
-            {               
-                if (Console.KeyAvailable)
-                {
-                    ConsoleKeyInfo key = Console.ReadKey(true);
+            {
+                ConsoleKeyInfo key = Console.ReadKey(true);
 
-                    switch (key.Key)
-                    {
-                        case ConsoleKey.UpArrow:
-                            playerDirectionX = -1;
-                            playerDirectionY = 0;
-                            break;
-                        case ConsoleKey.DownArrow:
-                            playerDirectionX = 1;
-                            playerDirectionY = 0;
-                            break;
-                        case ConsoleKey.LeftArrow:
-                            playerDirectionX = 0;
-                            playerDirectionY = -1;
-                            break;
-                        case ConsoleKey.RightArrow:
-                            playerDirectionX = 0;
-                            playerDirectionY = 1;
-                            break;
-                        case ConsoleKey.A:
-                            box = '$';
-                            break;
-                        case ConsoleKey.S:
-                            box = '%';
-                            break;
-                        case ConsoleKey.D:
-                            box = ' ';
-                            break;
-                        case ConsoleKey.W:
-                            box = '.';
-                            break;
-                    }
-                    if (map[playerPositinX + playerDirectionX, playerPositionY + playerDirectionY] != '#')
-                    {
-                        Move(ref playerPositinX, ref playerPositionY, playerDirectionX, playerDirectionY,box);
-                    }                   
+                switch (key.Key)
+                {
+                    case ConsoleKey.UpArrow:
+                        playerDirectionX = -1;
+                        playerDirectionY = 0;
+                        break;
+                    case ConsoleKey.DownArrow:
+                        playerDirectionX = 1;
+                        playerDirectionY = 0;
+                        break;
+                    case ConsoleKey.LeftArrow:
+                        playerDirectionX = 0;
+                        playerDirectionY = -1;
+                        break;
+                    case ConsoleKey.RightArrow:
+                        playerDirectionX = 0;
+                        playerDirectionY = 1;
+                        break;
+                    case ConsoleKey.A:
+                        playerDirectionX = 0;
+                        playerDirectionY = 0;
+                        mapElement = '$';
+                        break;
+                    case ConsoleKey.S:
+                        playerDirectionX = 0;
+                        playerDirectionY = 0;
+                        mapElement = '%';
+                        break;
+                    case ConsoleKey.D:
+                        playerDirectionX = 0;
+                        playerDirectionY = 0;
+                        mapElement = ' ';
+                        break;
+                    case ConsoleKey.W:
+                        playerDirectionX = 0;
+                        playerDirectionY = 0;
+                        mapElement = '.';
+                        break;
+                    default:
+                        playerDirectionX = 0;
+                        playerDirectionY = 0;
+                        break;
                 }
+                if (map[playerPositinX + playerDirectionX, playerPositionY + playerDirectionY] != '#')
+                {
+                    Move(ref playerPositinX, ref playerPositionY, playerDirectionX, playerDirectionY, mapElement);
+                }
+
             }
         }
-        static void Move(ref int x,ref int y, int directionX,  int directionY,char box)
+        static void Move(ref int x, ref int y, int directionX, int directionY, char box)
         {
             Console.SetCursorPosition(y, x);
             Console.Write(box);
@@ -87,7 +97,7 @@ namespace Map
 
             for (int i = 0; i < map.GetLength(0); i++)
             {
-                for (int j = 0; j <map.GetLength(1) ; j++)
+                for (int j = 0; j < map.GetLength(1); j++)
                 {
                     map[i, j] = fileMap[i][j];
 
@@ -101,7 +111,7 @@ namespace Map
 
             return map;
         }
-        static void ShowMap(char[,]array)
+        static void ShowMap(char[,] array)
         {
             for (int i = 0; i < array.GetLength(0); i++)
             {
@@ -111,6 +121,6 @@ namespace Map
                 }
                 Console.WriteLine();
             }
-        }       
+        }
     }
 }
