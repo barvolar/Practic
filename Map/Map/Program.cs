@@ -26,56 +26,64 @@ namespace Map
             while (isPlaying)
             {
                 ConsoleKeyInfo key = Console.ReadKey(true);
-
-                switch (key.Key)
-                {
-                    case ConsoleKey.UpArrow:
-                        playerDirectionX = -1;
-                        playerDirectionY = 0;
-                        break;
-                    case ConsoleKey.DownArrow:
-                        playerDirectionX = 1;
-                        playerDirectionY = 0;
-                        break;
-                    case ConsoleKey.LeftArrow:
-                        playerDirectionX = 0;
-                        playerDirectionY = -1;
-                        break;
-                    case ConsoleKey.RightArrow:
-                        playerDirectionX = 0;
-                        playerDirectionY = 1;
-                        break;
-                    case ConsoleKey.A:
-                        playerDirectionX = 0;
-                        playerDirectionY = 0;
-                        mapElement = '$';
-                        break;
-                    case ConsoleKey.S:
-                        playerDirectionX = 0;
-                        playerDirectionY = 0;
-                        mapElement = '%';
-                        break;
-                    case ConsoleKey.D:
-                        playerDirectionX = 0;
-                        playerDirectionY = 0;
-                        mapElement = ' ';
-                        break;
-                    case ConsoleKey.W:
-                        playerDirectionX = 0;
-                        playerDirectionY = 0;
-                        mapElement = '.';
-                        break;
-                    default:
-                        playerDirectionX = 0;
-                        playerDirectionY = 0;
-                        break;
-                }
+                Сontroller(key,ref playerDirectionX, ref playerDirectionY);
+                SwitchElement(key,ref mapElement);
+               
                 if (map[playerPositinX + playerDirectionX, playerPositionY + playerDirectionY] != '#')
                 {
                     Move(ref playerPositinX, ref playerPositionY, playerDirectionX, playerDirectionY, mapElement);
                 }
 
             }
+        }
+
+        static void SwitchElement(ConsoleKeyInfo key,ref char mapElement)
+        {
+
+            switch (key.Key)
+            {
+                case ConsoleKey.A:
+                    mapElement = '$';
+                    break;
+                case ConsoleKey.S:
+                    mapElement = '%';
+                    break;
+                case ConsoleKey.D:
+                    mapElement = ' ';
+                    break;
+                case ConsoleKey.W:
+                    mapElement = '.';
+                    break;
+            }
+
+        }
+        static void Сontroller(ConsoleKeyInfo key,ref int directionX, ref int directionY)
+        {
+
+            switch (key.Key)
+            {
+                case ConsoleKey.UpArrow:
+                    directionX = -1;
+                    directionY = 0;
+                    break;
+                case ConsoleKey.DownArrow:
+                    directionX = 1;
+                    directionY = 0;
+                    break;
+                case ConsoleKey.LeftArrow:
+                    directionX = 0;
+                    directionY = -1;
+                    break;
+                case ConsoleKey.RightArrow:
+                    directionX = 0;
+                    directionY = 1;
+                    break;
+                default:
+                    directionX = 0;
+                    directionY = 0;
+                    break;
+            }
+
         }
 
 
