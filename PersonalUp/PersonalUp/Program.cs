@@ -13,8 +13,6 @@ namespace PersonalUp
             Dictionary<string, string> personal = new Dictionary<string, string>();
             string input = " ";
 
-           
-
             while (input != "4")
             {
                 ShowMenu();
