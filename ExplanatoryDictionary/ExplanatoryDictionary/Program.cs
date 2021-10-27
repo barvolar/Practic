@@ -10,7 +10,11 @@ namespace ExplanatoryDictionary
             Dictionary<string, string> items = new Dictionary<string, string>();
             bool isPlay = true;
 
-            Additem(items);
+            AddItems(items, "Меч", "Оружие Ближнего боя");
+            AddItems(items, "Лук", "Оружие Дальнего боя");
+            AddItems(items, "Яблоко", "Еда");
+            AddItems(items, "Бутылка", "Предмет для набора воды ");
+            AddItems(items, "Факел", "Источник света в темноте");
 
             Console.WriteLine("У вас имеется:");
 
@@ -19,35 +23,31 @@ namespace ExplanatoryDictionary
                 Console.WriteLine(item.Key);
             }
 
-            Console.WriteLine("О чём хотите узнать больше ?");
+            Console.WriteLine("О чём хотите узнать больше ?\nP.S. Exit - Выход");
 
             while (isPlay)
             {
                 string userInput = Console.ReadLine();
 
-                if (items.ContainsKey(userInput))
-                {
-                    Console.WriteLine(items[userInput]);
-                }
-                else if (userInput == "Exit")
+                if (userInput == "Exit")
                 {
                     isPlay = false;
                 }
+                else if (items.ContainsKey(userInput))
+                {
+                    Console.WriteLine(items[userInput]);
+                }
+
                 else
                 {
                     Console.WriteLine("Такой вещи у вас нет");
                 }
-            }          
+            }
         }
 
-        static void Additem(Dictionary<string,string> items)
-        {
-            items.Add("Меч", "Оружие ближнего боя");
-            items.Add("Лук", "Оружие дальнего боя");
-            items.Add("Яблоко", "Еда");
-            items.Add("Бутылка", "Ёмкость для набора воды");
-            items.Add("Зажигалка", "Позволяет развести огонь");
+        static void AddItems(Dictionary<string, string> items,string item, string itemInfo)
+        {        
+            items.Add(item, itemInfo);
         }
-      
     }
 }
