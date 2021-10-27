@@ -11,19 +11,18 @@ namespace PersonalUp
         static void Main(string[] args)
         {
             Dictionary<string, string> personal = new Dictionary<string, string>();
-            string name;
-            string post;
             string input = " ";
 
-            ShowMassage();
+           
 
             while (input != "4")
             {
+                ShowMenu();
                 input = Console.ReadLine();
                 switch (input)
                 {
                     case "1":
-                        AddWorker(out name, out post, personal);
+                        AddWorker(personal);
                         break;
                     case "2":
                         ShowWorker(personal);
@@ -35,31 +34,29 @@ namespace PersonalUp
                        break;
                     default:
                         Console.Clear();
-                        ShowMassage();
+                        //ShowMenu();
                         break;
                 }
             }       
         }
 
-        static void AddWorker(out string name, out string post, Dictionary<string, string> dictionary)
+        static void AddWorker( Dictionary<string, string> dictionary)
         {
             Console.WriteLine("Введите имя работника");
-            name = Console.ReadLine();
-            foreach (var item in dictionary)
+            string name = Console.ReadLine();
+
+            while(dictionary.ContainsKey(name))
             {
-                while (item.Key == name)
-                {
-                    Console.WriteLine("Такие сотрудники у нас уже есть . Дайте ему другое имя, ибо нехуй");
-                    name = Console.ReadLine();
-                }
+                Console.WriteLine("Такие сотрудники у нас уже есть . Дайте ему другое имя, ибо нехуй");
+                name = Console.ReadLine();
             }
+           
             Console.WriteLine("Введите должность работника");
-            post = Console.ReadLine();
+            string post = Console.ReadLine();
             dictionary.Add(name, post);
             Console.WriteLine("Сотрудник успешно добавлен, нажмите любую кнопку для продолжения");
             Console.ReadKey();
             Console.Clear();
-            ShowMassage();
         }
 
         static void ShowWorker(Dictionary<string, string> dictuionary)
@@ -73,20 +70,28 @@ namespace PersonalUp
             Console.WriteLine("\nДля продолжения нажмите любую кнопку");
             Console.ReadKey();
             Console.Clear();
-            ShowMassage();
         }
 
-        static void ShowMassage()
+        static void ShowMenu()
         {
-            Console.WriteLine("1) добавить досье\n2) вывести все досье\n3) удалить досье\n4) выход");
+            Console.WriteLine("1) добавить досье\n2) вывести все досье\n3) уволить сотрудника\n4) выход");
         }
         static void ClearPersonal(Dictionary<string,string> dictionary)
         {
-            dictionary.Clear();        
-            Console.WriteLine("\nДосье Очищено.Для продолжения нажмите любую кнопку");
+            Console.WriteLine("Введите имя сотрудника которого хотите уволить");
+            string name = Console.ReadLine();
+
+            if (dictionary.ContainsKey(name))
+            {
+                dictionary.Remove(name);
+                Console.WriteLine("\nСотрудник уволен!!");
+            }
+            else
+            {
+                Console.WriteLine("Таких у нас нет");
+            }                     
             Console.ReadKey();
             Console.Clear();
-            ShowMassage();
         }
     }
 }
