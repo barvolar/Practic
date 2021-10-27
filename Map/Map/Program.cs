@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Collections.Generic;
 
 namespace Map
 {
@@ -76,10 +77,12 @@ namespace Map
 
             }
         }
-        static void Move(ref int x, ref int y, int directionX, int directionY, char box)
+
+
+        static void Move(ref int x, ref int y, int directionX, int directionY, char mapElement)
         {
             Console.SetCursorPosition(y, x);
-            Console.Write(box);
+            Console.Write(mapElement);
 
             x += directionX;
             y += directionY;
