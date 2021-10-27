@@ -26,9 +26,9 @@ namespace Map
             while (isPlaying)
             {
                 ConsoleKeyInfo key = Console.ReadKey(true);
-                Сontroller(key,ref playerDirectionX, ref playerDirectionY);
-                SwitchElement(key,ref mapElement);
-               
+                Сontroller(key, ref playerDirectionX, ref playerDirectionY);
+                SwitchElement(key, ref mapElement);
+
                 if (map[playerPositinX + playerDirectionX, playerPositionY + playerDirectionY] != '#')
                 {
                     Move(ref playerPositinX, ref playerPositionY, playerDirectionX, playerDirectionY, mapElement);
@@ -37,7 +37,7 @@ namespace Map
             }
         }
 
-        static void SwitchElement(ConsoleKeyInfo key,ref char mapElement)
+        static void SwitchElement(ConsoleKeyInfo key, ref char mapElement)
         {
 
             switch (key.Key)
@@ -57,7 +57,7 @@ namespace Map
             }
 
         }
-        static void Сontroller(ConsoleKeyInfo key,ref int directionX, ref int directionY)
+        static void Сontroller(ConsoleKeyInfo key, ref int directionX, ref int directionY)
         {
 
             switch (key.Key)
