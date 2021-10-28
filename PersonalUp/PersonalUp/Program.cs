@@ -30,7 +30,7 @@ namespace PersonalUp
                         ClearPersonal(personal);
                         break;
                     case "4":
-                       break;
+                        break;
                     default:
                         Console.WriteLine("ОШИБКА!!! \nДля продолжения нажмите любую кнопку");
                         break;
