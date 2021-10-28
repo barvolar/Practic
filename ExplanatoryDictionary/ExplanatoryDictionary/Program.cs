@@ -60,7 +60,10 @@ namespace ExplanatoryDictionary
 
         static void AddItem(Dictionary<string, string> items, string item, string itemInfo)
         {
-            items.Add(item, itemInfo);
+            if (!items.ContainsKey(item))
+            {
+                items.Add(item, itemInfo); 
+            }
         }
     }
 }
