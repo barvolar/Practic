@@ -26,7 +26,7 @@ namespace Map
             while (isPlaying)
             {
                 ConsoleKeyInfo key = Console.ReadKey(true);
-                GetDirections(key, ref playerDirectionX, ref playerDirectionY);
+                GetDirections(key, out playerDirectionX, out playerDirectionY);
                 SwitchElement(key, ref mapElement);
 
                 if (map[playerPositinX + playerDirectionX, playerPositionY + playerDirectionY] != '#')
@@ -58,7 +58,7 @@ namespace Map
 
         }
 
-        static void GetDirections(ConsoleKeyInfo key, ref int directionX, ref int directionY)
+        static void GetDirections(ConsoleKeyInfo key, out int directionX, out int directionY)
         {
 
             switch (key.Key)
