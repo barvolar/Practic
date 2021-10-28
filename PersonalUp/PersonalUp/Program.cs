@@ -17,6 +17,7 @@ namespace PersonalUp
             {
                 ShowMenu();
                 input = Console.ReadLine();
+
                 switch (input)
                 {
                     case "1":
@@ -31,11 +32,13 @@ namespace PersonalUp
                     case "4":
                        break;
                     default:
-                        Console.Clear();
-                        //ShowMenu();
+                        Console.WriteLine("ОШИБКА!!! \nДля продолжения нажмите любую кнопку");
                         break;
                 }
-            }       
+
+                Console.ReadKey();
+                Console.Clear();
+            }
         }
 
         static void AddWorker( Dictionary<string, string> dictionary)
@@ -53,8 +56,6 @@ namespace PersonalUp
             string post = Console.ReadLine();
             dictionary.Add(name, post);
             Console.WriteLine("Сотрудник успешно добавлен, нажмите любую кнопку для продолжения");
-            Console.ReadKey();
-            Console.Clear();
         }
 
         static void ShowWorker(Dictionary<string, string> dictuionary)
@@ -66,14 +67,13 @@ namespace PersonalUp
                 Console.Write($" -{item.Key} на должности  {item.Value}");
             }
             Console.WriteLine("\nДля продолжения нажмите любую кнопку");
-            Console.ReadKey();
-            Console.Clear();
         }
 
         static void ShowMenu()
         {
             Console.WriteLine("1) добавить досье\n2) вывести все досье\n3) уволить сотрудника\n4) выход");
         }
+
         static void ClearPersonal(Dictionary<string,string> dictionary)
         {
             Console.WriteLine("Введите имя сотрудника которого хотите уволить");
@@ -88,8 +88,6 @@ namespace PersonalUp
             {
                 Console.WriteLine("Таких у нас нет");
             }                     
-            Console.ReadKey();
-            Console.Clear();
         }
     }
 }
