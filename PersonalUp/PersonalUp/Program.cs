@@ -10,7 +10,7 @@ namespace PersonalUp
     {
         static void Main(string[] args)
         {
-            Dictionary<string, string> personal = new Dictionary<string, string>();
+            Dictionary<string, string> staff = new Dictionary<string, string>();
             string input = " ";
 
             while (input != "4")
@@ -21,13 +21,13 @@ namespace PersonalUp
                 switch (input)
                 {
                     case "1":
-                        AddWorker(personal);
+                        AddWorker(staff);
                         break;
                     case "2":
-                        ShowWorker(personal);
+                        ShowWorker(staff);
                         break;
                     case "3":
-                        ClearPersonal(personal);
+                        DismissWorker(staff);
                         break;
                     case "4":
                         break;
@@ -58,13 +58,13 @@ namespace PersonalUp
             Console.WriteLine("Сотрудник успешно добавлен, нажмите любую кнопку для продолжения");
         }
 
-        static void ShowWorker(Dictionary<string, string> dictuionary)
+        static void ShowWorker(Dictionary<string, string> dictionary)
         {
             Console.WriteLine("Ваши сотрудники:");
 
-            foreach (var item in dictuionary)
+            foreach (var worker in dictionary)
             {
-                Console.Write($" -{item.Key} на должности  {item.Value}");
+                Console.Write($" -{worker.Key} на должности  {worker.Value}");
             }
             Console.WriteLine("\nДля продолжения нажмите любую кнопку");
         }
@@ -74,7 +74,7 @@ namespace PersonalUp
             Console.WriteLine("1) добавить досье\n2) вывести все досье\n3) уволить сотрудника\n4) выход");
         }
 
-        static void ClearPersonal(Dictionary<string,string> dictionary)
+        static void DismissWorker(Dictionary<string,string> dictionary)
         {
             Console.WriteLine("Введите имя сотрудника которого хотите уволить");
             string name = Console.ReadLine();
