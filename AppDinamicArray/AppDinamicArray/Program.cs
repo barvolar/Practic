@@ -11,28 +11,29 @@ namespace AppDinamicArray
         static void Main(string[] args)
         {
             List<int> numbers = new List<int>();
-            string userInput = " ";
+            string userInput;
             bool isPlay = true;
 
-            ShowMeny();
+            ShowMenu();
 
             while (isPlay)
             {
                 userInput = Console.ReadLine();
+
                 switch (userInput)
                 {
                     case "Sum":
                         Console.Clear();
-                        ShowMeny();
-                        Console.WriteLine($"Сумма = {ShowSum(numbers)}");
+                        ShowMenu();
+                        Console.WriteLine($"Сумма = {ReturnSum(numbers)}");
                         break;
                     case "Exit":
                         isPlay = false;
                         break;
                     default:
-                        if (Int32.TryParse(userInput, out int i))
+                        if (Int32.TryParse(userInput, out int InputNumber))
                         {
-                            numbers.Add(i);
+                            numbers.Add(InputNumber);
                         }
                         else
                         {
@@ -40,20 +41,22 @@ namespace AppDinamicArray
                         }
                         break;
                 }
+
             }
         }
 
-        static int ShowSum(List<int> list)
+        static int ReturnSum(List<int> list)
         {
-            int resul = 0;
+            int sum = 0;
+
             for (int i = 0; i < list.Count; i++)
             {
-                resul += list[i];
+                sum += list[i];
             }
-            return resul;
+            return sum;
         }
 
-        static void ShowMeny()
+        static void ShowMenu()
         {
             Console.WriteLine("Введите числа. Когда надоест введите Sum и получите их сумму. \nЧто бы выйти введите Exit ");
         }
