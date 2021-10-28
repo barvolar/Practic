@@ -24,7 +24,7 @@ namespace PersonalUp
                         AddWorker(staff);
                         break;
                     case "2":
-                        ShowWorker(staff);
+                        ShowStaff(staff);
                         break;
                     case "3":
                         DismissWorker(staff);
@@ -58,7 +58,7 @@ namespace PersonalUp
             Console.WriteLine("Сотрудник успешно добавлен, нажмите любую кнопку для продолжения");
         }
 
-        static void ShowWorker(Dictionary<string, string> dictionary)
+        static void ShowStaff(Dictionary<string, string> dictionary)
         {
             Console.WriteLine("Ваши сотрудники:");
 
