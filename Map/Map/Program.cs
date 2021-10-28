@@ -26,7 +26,7 @@ namespace Map
             while (isPlaying)
             {
                 ConsoleKeyInfo key = Console.ReadKey(true);
-                Сontroller(key, ref playerDirectionX, ref playerDirectionY);
+                GetDirections(key, ref playerDirectionX, ref playerDirectionY);
                 SwitchElement(key, ref mapElement);
 
                 if (map[playerPositinX + playerDirectionX, playerPositionY + playerDirectionY] != '#')
@@ -57,7 +57,8 @@ namespace Map
             }
 
         }
-        static void Сontroller(ConsoleKeyInfo key, ref int directionX, ref int directionY)
+
+        static void GetDirections(ConsoleKeyInfo key, ref int directionX, ref int directionY)
         {
 
             switch (key.Key)
@@ -86,7 +87,6 @@ namespace Map
 
         }
 
-
         static void Move(ref int x, ref int y, int directionX, int directionY, char mapElement)
         {
             Console.SetCursorPosition(y, x);
@@ -98,6 +98,7 @@ namespace Map
             Console.SetCursorPosition(y, x);
             Console.Write("@");
         }
+
         static char[,] ReadMap(string nameMap, out int playerX, out int playerY)
         {
             playerX = 0;
