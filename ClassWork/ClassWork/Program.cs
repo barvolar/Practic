@@ -8,18 +8,35 @@ namespace ClassWork
         {
             Player enemyPlayer = new Player();
             enemyPlayer.ShowStats();
+
+            Player hero = new Player("Димон","Паладин",10000);
+            hero.ShowStats();
         }
     }
 
     class Player
     {
-        private string _name = "Убицца328";
-        private string _profession = "Пекарь";
-        private int _health = 100;
+        private string _name;
+        private string _profession;
+        private int _health;
+
+        public Player(string name, string profession, int health)
+        {
+            _name = name;
+            _profession = profession;
+            _health = health;
+        }
+
+        public Player()
+        {
+            _name = "Новый игрок";
+            _profession = "Тунеядец";
+            _health = 20;
+        }
 
         public void ShowStats()
         {
-            Console.Write($" Имя - {_name}\n Профессия - {_profession}\n Жизни - {_health}");
+            Console.WriteLine($" Имя - {_name}\n Профессия - {_profession}\n Жизни - {_health}");
         }
     }
 }
