@@ -11,7 +11,6 @@ namespace Working_with_properties
             Renderer showPlayer = new Renderer();
 
             showPlayer.DrowPlayer(player1.X, player1.Y);
-
         }
     }
 
