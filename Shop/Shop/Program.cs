@@ -58,7 +58,7 @@ namespace Shop
             Console.WriteLine("Готово для продолжения нажмите любую клавишу");
             Console.ReadKey();
         }
-        
+
         static bool ChekItem(Vendor vendor)
         {
             bool producAvailability;
@@ -109,7 +109,7 @@ namespace Shop
 
             if (Int32.TryParse(userInput, out int Input))
             {
-                if (Input > _bag.Count||Input<=0)
+                if (Input > _bag.Count || Input <= 0)
                 {
                     Console.WriteLine("ОЩИБКА ТОВАР НЕ НАЙДЕН");
                 }
@@ -121,7 +121,7 @@ namespace Shop
                         _bag.RemoveAt(i);
                     }
 
-                }         
+                }
             }
             else
             {
