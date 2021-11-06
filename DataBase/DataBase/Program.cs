@@ -5,38 +5,7 @@ namespace DataBase
 {
     class Program
     {
-        static void ShowMenu()
-        {
-            Console.WriteLine($"1: Показать всех персонажей\n2: Добавить персонажа\n3: Забанить или разбанить персонажа\n4: Выход");
-        }
-
-        static void ShowPlayers(List<Player> players)
-        {
-            for (int i = 0; i < players.Count; i++)
-            {
-                Console.WriteLine($"Number {i + 1}");
-                players[i].ShowInfo();
-            }
-        }
-
-        static void AddPlayer(List<Player> players)
-        {
-            Console.WriteLine("Введите имя персонажа");
-            players.Add(new Player(Console.ReadLine()));
-        }
-
-        static void SwitchBan(List<Player> players)
-        {
-            Console.WriteLine("Введите номер персонажа");
-            int input = Convert.ToInt32(Console.ReadLine());
-            for (int i = 0; i < players.Count; i++)
-            {
-                if (input == i + 1)
-                {
-                    players[i].SwitchBan();
-                }
-            }
-        }
+        // меню и switch.
         static void Main(string[] args)
         {
             bool isPlay = true;
@@ -74,21 +43,58 @@ namespace DataBase
                 Console.ReadKey();
             }
         }
+        static void ShowMenu()
+        {
+            Console.WriteLine($"1: Показать всех персонажей\n2: Добавить персонажа\n3: Забанить или разбанить персонажа\n4: Выход");
+        }
+
+        static void ShowPlayers(List<Player> players)
+        {
+            for (int i = 0; i < players.Count; i++)
+            {
+                Console.WriteLine($"Number {i + 1}");
+                players[i].ShowInfo();
+            }
+        }
+
+        static void AddPlayer(List<Player> players)
+        {
+            Console.WriteLine("Введите имя персонажа");
+            players.Add(new Player(Console.ReadLine()));
+        }
+
+        static void SwitchBan(List<Player> players)
+        {
+            Console.WriteLine("Введите номер персонажа");
+            int input = Convert.ToInt32(Console.ReadLine());
+            for (int i = 0; i < players.Count; i++)
+            {
+                if (input == i + 1)
+                {
+                    players[i].SwitchBan();
+                }
+            }
+        }
+    }
+
+    class DotaBase
+    {
+
     }
 
     class Player
     {
+        private bool _isBan;
         public string Name { get; private set; }
         public int Level { get; private set; }
-        public int Number { get; private set; }
-        private bool _isBan;
+       // public int Number { get; private set; }  удалить
 
-        Random random = new Random();
+        private Random _random = new Random();
 
         public Player(string name)
         {
             Name = name;
-            Level = random.Next(81);
+            Level = _random.Next(81);
             _isBan = false;
         }
 

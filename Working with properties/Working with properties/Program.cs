@@ -8,9 +8,9 @@ namespace Working_with_properties
         {
             Player player1 = new Player(13, 1);
 
-            Renderer playerPosition = new Renderer();
+            Renderer renderer = new Renderer();
 
-            playerPosition.DrowPlayer(player1.PositionX, player1.PositionY);
+            renderer.DrowPlayer(player1.PositionX, player1.PositionY);
         }
     }
 
