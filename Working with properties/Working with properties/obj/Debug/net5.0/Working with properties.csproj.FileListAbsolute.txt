@@ -1,0 +1,16 @@
+E:\Learn\Working with properties\Working with properties\bin\Debug\net5.0\Working with properties.exe
+E:\Learn\Working with properties\Working with properties\bin\Debug\net5.0\Working with properties.deps.json
+E:\Learn\Working with properties\Working with properties\bin\Debug\net5.0\Working with properties.runtimeconfig.json
+E:\Learn\Working with properties\Working with properties\bin\Debug\net5.0\Working with properties.runtimeconfig.dev.json
+E:\Learn\Working with properties\Working with properties\bin\Debug\net5.0\Working with properties.dll
+E:\Learn\Working with properties\Working with properties\bin\Debug\net5.0\ref\Working with properties.dll
+E:\Learn\Working with properties\Working with properties\bin\Debug\net5.0\Working with properties.pdb
+E:\Learn\Working with properties\Working with properties\obj\Debug\net5.0\Working with properties.csprojAssemblyReference.cache
+E:\Learn\Working with properties\Working with properties\obj\Debug\net5.0\Working with properties.GeneratedMSBuildEditorConfig.editorconfig
+E:\Learn\Working with properties\Working with properties\obj\Debug\net5.0\Working with properties.AssemblyInfoInputs.cache
+E:\Learn\Working with properties\Working with properties\obj\Debug\net5.0\Working with properties.AssemblyInfo.cs
+E:\Learn\Working with properties\Working with properties\obj\Debug\net5.0\Working with properties.csproj.CoreCompileInputs.cache
+E:\Learn\Working with properties\Working with properties\obj\Debug\net5.0\Working with properties.dll
+E:\Learn\Working with properties\Working with properties\obj\Debug\net5.0\ref\Working with properties.dll
+E:\Learn\Working with properties\Working with properties\obj\Debug\net5.0\Working with properties.pdb
+E:\Learn\Working with properties\Working with properties\obj\Debug\net5.0\Working with properties.genruntimeconfig.cache
