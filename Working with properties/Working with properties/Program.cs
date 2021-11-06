@@ -32,7 +32,7 @@ namespace Working_with_properties
             {
                 return _x;
             }
-            set
+            private set
             {
                 _x = value;
             }
