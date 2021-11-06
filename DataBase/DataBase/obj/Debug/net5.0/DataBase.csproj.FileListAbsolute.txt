@@ -1,0 +1,16 @@
+E:\Learn\DataBase\DataBase\bin\Debug\net5.0\DataBase.exe
+E:\Learn\DataBase\DataBase\bin\Debug\net5.0\DataBase.deps.json
+E:\Learn\DataBase\DataBase\bin\Debug\net5.0\DataBase.runtimeconfig.json
+E:\Learn\DataBase\DataBase\bin\Debug\net5.0\DataBase.runtimeconfig.dev.json
+E:\Learn\DataBase\DataBase\bin\Debug\net5.0\DataBase.dll
+E:\Learn\DataBase\DataBase\bin\Debug\net5.0\ref\DataBase.dll
+E:\Learn\DataBase\DataBase\bin\Debug\net5.0\DataBase.pdb
+E:\Learn\DataBase\DataBase\obj\Debug\net5.0\DataBase.csprojAssemblyReference.cache
+E:\Learn\DataBase\DataBase\obj\Debug\net5.0\DataBase.GeneratedMSBuildEditorConfig.editorconfig
+E:\Learn\DataBase\DataBase\obj\Debug\net5.0\DataBase.AssemblyInfoInputs.cache
+E:\Learn\DataBase\DataBase\obj\Debug\net5.0\DataBase.AssemblyInfo.cs
+E:\Learn\DataBase\DataBase\obj\Debug\net5.0\DataBase.csproj.CoreCompileInputs.cache
+E:\Learn\DataBase\DataBase\obj\Debug\net5.0\DataBase.dll
+E:\Learn\DataBase\DataBase\obj\Debug\net5.0\ref\DataBase.dll
+E:\Learn\DataBase\DataBase\obj\Debug\net5.0\DataBase.pdb
+E:\Learn\DataBase\DataBase\obj\Debug\net5.0\DataBase.genruntimeconfig.cache
