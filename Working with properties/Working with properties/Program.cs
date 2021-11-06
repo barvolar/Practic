@@ -8,9 +8,9 @@ namespace Working_with_properties
         {
             Player player1 = new Player(13, 1);
 
-            Renderer showPlayer = new Renderer();
+            Renderer playerPosition = new Renderer();
 
-            showPlayer.DrowPlayer(player1.X, player1.Y);
+            playerPosition.DrowPlayer(player1.PositionX, player1.PositionY);
         }
     }
 
@@ -25,24 +25,27 @@ namespace Working_with_properties
 
     class Player
     {
-        private int _x;
-        public int X
+        private int _positionX;
+
+        public int PositionX
+
         {
             get
             {
-                return _x;
+                return _positionX;
             }
             private set
             {
-                _x = value;
+                _positionX = value;
             }
         }
-        public int Y { get; private set; }
+
+        public int PositionY { get; private set; }
 
         public Player(int x, int y)
         {
-            _x = x;
-            Y = y;
+            _positionX = x;
+            PositionY = y;
         }
     }
 }
