@@ -26,7 +26,6 @@ namespace Working_with_properties
     class Player
     {
         private int _positionX;
-
         public int PositionX
 
         {
