@@ -10,8 +10,7 @@ namespace DataBase
             bool isPlay = true;
             string inputUser;
 
-            List<Player> players = new List<Player>();
-            DataBase dataBase = new DataBase();
+            Database dataBase = new Database();
 
             while (isPlay)
             {
@@ -23,14 +22,14 @@ namespace DataBase
                 switch (inputUser)
                 {
                     case "1":
-                        dataBase.ShowPlayers(players);
+                        dataBase.ShowPlayers();
                         break;
                     case "2":
-                        dataBase.AddPlayer(players);
+                        dataBase.AddPlayer();
                         break;
                     case "3":
-                        dataBase.ShowPlayers(players);
-                        dataBase.SwitchBan(players);
+                        dataBase.ShowPlayers();
+                        dataBase.SwitchBan();
                         break;
                     case "4":
                         isPlay = false;
@@ -39,7 +38,6 @@ namespace DataBase
                         Console.WriteLine("!!!ОШИБКА!!!");
                         break;
                 }
-
                 Console.WriteLine("Готово. Для продолжения нажмите любую кнопку");
                 Console.ReadKey();
             }
@@ -51,33 +49,54 @@ namespace DataBase
         }
     }
 
-    class DataBase
+    class Database
     {
-        public void ShowPlayers(List<Player> players)
+        private List<Player> _players;
+
+        public Database()
         {
-            for (int i = 0; i < players.Count; i++)
+            _players = new List<Player>();
+        }
+        public void ShowPlayers()
+        {
+
+            for (int i = 0; i < _players.Count; i++)
             {
                 Console.WriteLine($"Number {i + 1}");
-                players[i].ShowInfo();
+                _players[i].ShowInfo();
             }
         }
 
-        public void AddPlayer(List<Player> players)
+        public void AddPlayer()
         {
             Console.WriteLine("Введите имя персонажа");
-            players.Add(new Player(Console.ReadLine()));
+            _players.Add(new Player(Console.ReadLine()));
         }
 
-        public void SwitchBan(List<Player> players)
+        public void SwitchBan()
         {
             Console.WriteLine("Введите номер персонажа");
             int input = Convert.ToInt32(Console.ReadLine());
 
-            for (int i = 0; i < players.Count; i++)
+            for (int i = 0; i < _players.Count; i++)
             {
                 if (input == i + 1)
                 {
-                    players[i].SwitchBan();
+                    Console.WriteLine("1: Забанить\n2: Разбанить");
+                    input = Convert.ToInt32(Console.ReadLine());
+                    if (input == 1)
+                    {
+                        _players[i].Ban();
+                    }
+                    else if (input == 2)
+                    {
+                        _players[i].Unban();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Ошибка");
+                    }
+
                 }
             }
         }
@@ -85,7 +104,7 @@ namespace DataBase
 
     class Player
     {
-        private bool _isBan;
+        private bool _isBanned;
         public string Name { get; private set; }
         public int Level { get; private set; }
 
@@ -95,24 +114,36 @@ namespace DataBase
         {
             Name = name;
             Level = _random.Next(81);
-            _isBan = false;
+            _isBanned = false;
         }
 
-        public void SwitchBan()
+        public void Ban()
         {
-            if (_isBan == true)
+            if (_isBanned == true)
             {
-                _isBan = false;
+                Console.WriteLine("Персонаж уже забанен");
             }
             else
             {
-                _isBan = true;
+                _isBanned = true;
+            }
+        }
+
+        public void Unban()
+        {
+            if (_isBanned == true)
+            {
+                _isBanned = false;
+            }
+            else
+            {
+                Console.WriteLine("Персанаж не забанен");
             }
         }
 
         public void ShowInfo()
         {
-            Console.WriteLine($"Name = {Name}\nLevel = {Level}\nBan = {_isBan}");
+            Console.WriteLine($"Name = {Name}\nLevel = {Level}\nBan = {_isBanned}");
             Console.WriteLine("_______");
         }
     }
