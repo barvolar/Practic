@@ -1,0 +1,16 @@
+E:\Learn\Shop_01\Shop_01\bin\Debug\net5.0\Shop_01.exe
+E:\Learn\Shop_01\Shop_01\bin\Debug\net5.0\Shop_01.deps.json
+E:\Learn\Shop_01\Shop_01\bin\Debug\net5.0\Shop_01.runtimeconfig.json
+E:\Learn\Shop_01\Shop_01\bin\Debug\net5.0\Shop_01.runtimeconfig.dev.json
+E:\Learn\Shop_01\Shop_01\bin\Debug\net5.0\Shop_01.dll
+E:\Learn\Shop_01\Shop_01\bin\Debug\net5.0\ref\Shop_01.dll
+E:\Learn\Shop_01\Shop_01\bin\Debug\net5.0\Shop_01.pdb
+E:\Learn\Shop_01\Shop_01\obj\Debug\net5.0\Shop_01.csprojAssemblyReference.cache
+E:\Learn\Shop_01\Shop_01\obj\Debug\net5.0\Shop_01.GeneratedMSBuildEditorConfig.editorconfig
+E:\Learn\Shop_01\Shop_01\obj\Debug\net5.0\Shop_01.AssemblyInfoInputs.cache
+E:\Learn\Shop_01\Shop_01\obj\Debug\net5.0\Shop_01.AssemblyInfo.cs
+E:\Learn\Shop_01\Shop_01\obj\Debug\net5.0\Shop_01.csproj.CoreCompileInputs.cache
+E:\Learn\Shop_01\Shop_01\obj\Debug\net5.0\Shop_01.dll
+E:\Learn\Shop_01\Shop_01\obj\Debug\net5.0\ref\Shop_01.dll
+E:\Learn\Shop_01\Shop_01\obj\Debug\net5.0\Shop_01.pdb
+E:\Learn\Shop_01\Shop_01\obj\Debug\net5.0\Shop_01.genruntimeconfig.cache
