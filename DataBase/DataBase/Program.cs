@@ -5,13 +5,13 @@ namespace DataBase
 {
     class Program
     {
-        // меню и switch.
         static void Main(string[] args)
         {
             bool isPlay = true;
             string inputUser;
 
             List<Player> players = new List<Player>();
+            DataBase dataBase = new DataBase();
 
             while (isPlay)
             {
@@ -23,14 +23,14 @@ namespace DataBase
                 switch (inputUser)
                 {
                     case "1":
-                        ShowPlayers(players);
+                        dataBase.ShowPlayers(players);
                         break;
                     case "2":
-                        AddPlayer(players);
+                        dataBase.AddPlayer(players);
                         break;
                     case "3":
-                        ShowPlayers(players);
-                        SwitchBan(players);
+                        dataBase.ShowPlayers(players);
+                        dataBase.SwitchBan(players);
                         break;
                     case "4":
                         isPlay = false;
@@ -39,16 +39,21 @@ namespace DataBase
                         Console.WriteLine("!!!ОШИБКА!!!");
                         break;
                 }
+
                 Console.WriteLine("Готово. Для продолжения нажмите любую кнопку");
                 Console.ReadKey();
             }
         }
+
         static void ShowMenu()
         {
             Console.WriteLine($"1: Показать всех персонажей\n2: Добавить персонажа\n3: Забанить или разбанить персонажа\n4: Выход");
         }
+    }
 
-        static void ShowPlayers(List<Player> players)
+    class DataBase
+    {
+        public void ShowPlayers(List<Player> players)
         {
             for (int i = 0; i < players.Count; i++)
             {
@@ -57,16 +62,17 @@ namespace DataBase
             }
         }
 
-        static void AddPlayer(List<Player> players)
+        public void AddPlayer(List<Player> players)
         {
             Console.WriteLine("Введите имя персонажа");
             players.Add(new Player(Console.ReadLine()));
         }
 
-        static void SwitchBan(List<Player> players)
+        public void SwitchBan(List<Player> players)
         {
             Console.WriteLine("Введите номер персонажа");
             int input = Convert.ToInt32(Console.ReadLine());
+
             for (int i = 0; i < players.Count; i++)
             {
                 if (input == i + 1)
@@ -77,17 +83,11 @@ namespace DataBase
         }
     }
 
-    class DotaBase
-    {
-
-    }
-
     class Player
     {
         private bool _isBan;
         public string Name { get; private set; }
         public int Level { get; private set; }
-       // public int Number { get; private set; }  удалить
 
         private Random _random = new Random();
 
