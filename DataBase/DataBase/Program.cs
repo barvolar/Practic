@@ -59,7 +59,6 @@ namespace DataBase
         }
         public void ShowPlayers()
         {
-
             for (int i = 0; i < _players.Count; i++)
             {
                 Console.WriteLine($"Number {i + 1}");
