@@ -6,13 +6,13 @@ namespace qqq
     class Program
     {
         static void Main(string[] args)
-        {
-            Shop shop = new Shop();
+        {        
             Player player = new Player(70);
+            Vendor vendor = new Vendor();
             bool isPlay = true;
             string input;
 
-            while (isPlay && (player.ReturnMoney() >= 0))
+            while (isPlay && (player.ReturnMoney >= 0))
             {
                 player.ShowMoney();
                 ShowMenu();
@@ -21,19 +21,19 @@ namespace qqq
                 switch (input)
                 {
                     case "1":
-                        shop.ShowItems();
+                        vendor.ShowItems();
                         break;
                     case "2":
-                        shop.ShowItems();
+                        vendor.ShowItems();
                         Console.WriteLine("Введите номер предмета");
                         input = Console.ReadLine();
-                        if ((Int32.TryParse(input, out int number)) && number <= shop.ReturnBagCount()) 
+                        if ((Int32.TryParse(input, out int number)) && (number <= vendor.ReturnBagCount))
                         {
-                            shop.Buy(number, player);
+                            vendor.Buy(number, player);
                         }
                         break;
                     case "3":
-                        shop.ShowMyBag();
+                        player.ShowBag();
                         break;
                     case "4":
                         isPlay = false;
@@ -53,62 +53,22 @@ namespace qqq
         }
     }
 
-    class Player
-    {
-        private int _money;
 
-        public Player(int money)
-        {
-            _money = money;
-        }
-
-        public int ReturnMoney()
-        {
-            return _money;
-        }
-
-        public void SpendMoney(int value)
-        {
-            _money -= value;
-        }
-
-        public void ShowMoney()
-        {
-            Console.WriteLine($"Мои деньги : {_money}");
-        }
-    }
-
-    class Shop
+    class Vendor 
     {
         private List<Product> _vendorBag;
-        private List<Product> _playerBag;
 
-        public Shop()
+        public int ReturnBagCount
+        {
+            get
+            {
+                return _vendorBag.Count;
+            }
+        }
+
+        public Vendor()
         {
             _vendorBag = new List<Product>() { new Product("Яблоко", 11), new Product("хлеб", 23), new Product("сыр", 46) };
-            _playerBag = new List<Product>();
-        }
-
-        public void Buy(int number, Player player)
-        {
-            if (_vendorBag[number - 1].ReturnPrice() <= player.ReturnMoney())
-            {
-                _playerBag.Add(_vendorBag[number - 1]);
-                _vendorBag.RemoveAt(number - 1);
-                player.SpendMoney(_vendorBag[number - 1].ReturnPrice());
-            }
-            else
-            {
-                Console.WriteLine("Ошибка");
-            }
-        }
-
-        public void ShowMyBag()
-        {
-            foreach (var item in _playerBag)
-            {
-                item.ShowInfo();
-            }
         }
 
         public void ShowItems()
@@ -121,17 +81,76 @@ namespace qqq
             }
         }
 
-        public int ReturnBagCount()
+        public void Buy(int number, Player player)
         {
-            return _vendorBag.Count;
+            if (_vendorBag[number - 1].ReturnPrice <= player.ReturnMoney)
+            {
+                player.SpendMoney(_vendorBag[number - 1].ReturnPrice);
+                player.AddItem(_vendorBag[number-1]);
+                _vendorBag.RemoveAt(number - 1);             
+            }
+            else
+            {
+                Console.WriteLine("Ошибка");
+            }
+        }
+    }
+
+    class Player 
+    {
+        private int _money;
+        private List<Product> _playerBag;
+
+        public int ReturnMoney
+        {
+            get
+            {
+                return _money;
+            }
         }
 
+        public Player(int money)
+        {
+            _money = money;
+            _playerBag = new List<Product>();
+        }
+
+        public void AddItem(Product item)
+        {
+            _playerBag.Add(item);
+        }
+
+        public void SpendMoney(int value)
+        {
+            _money -= value;
+        }
+
+        public void ShowMoney()
+        {
+            Console.WriteLine($"Мои деньги : {_money}");
+        }
+
+        public void ShowBag()
+        {
+            foreach (var item in _playerBag)
+            {
+                item.ShowInfo();
+            }
+        }
     }
 
     class Product
     {
         private string _name;
         private int _price;
+
+        public int ReturnPrice
+        {
+            get
+            {
+                return _price;
+            }
+        }
 
         public Product(string name, int price)
         {
@@ -144,10 +163,7 @@ namespace qqq
             Console.WriteLine($"{_name} цена : {_price}");
         }
 
-        public int ReturnPrice()
-        {
-            return _price;
-        }
+          
     }
 
 
