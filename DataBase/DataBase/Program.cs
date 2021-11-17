@@ -45,13 +45,13 @@ namespace DataBase
 
         static void ShowMenu()
         {
-            Console.WriteLine($"1: Показать всех персонажей\n2: Добавить персонажа\n3: Забанить или разбанить персонажа\n4: Выход");
+            Console.WriteLine($"1: Показать всех персонажей\n2: Добавить персонажа\n3: Редактировать состояние персонажа\n4: Выход");
         }
     }
 
     class Database
     {
-        private List<Player> _players;
+        private List<Player> _players;        
 
         public Database()
         {
@@ -76,28 +76,35 @@ namespace DataBase
         public void SwitchBan()
         {
             Console.WriteLine("Введите номер персонажа");
-            int input = Convert.ToInt32(Console.ReadLine());
-
-            for (int i = 0; i < _players.Count; i++)
+            string input = Console.ReadLine();
+            if (Int32.TryParse(input, out int number))
             {
-                if (input == i + 1)
+                for (int i = 0; i < _players.Count; i++)
                 {
-                    Console.WriteLine("1: Забанить\n2: Разбанить");
-                    input = Convert.ToInt32(Console.ReadLine());
-                    if (input == 1)
+                    if (number == i + 1)
                     {
-                        _players[i].Ban();
+                        Console.WriteLine("1: Забанить\n2: Разбанить\n3: Удалить");
+                        switch (Console.ReadLine())
+                        {
+                            case "1":
+                                _players[i].Ban();
+                                break;
+                            case "2":
+                                _players[i].Unban();
+                                break;
+                            case "3":
+                                _players.RemoveAt(i);
+                                break;
+                            default:
+                                Console.WriteLine("Ошибка");
+                                break;
+                        }
                     }
-                    else if (input == 2)
-                    {
-                        _players[i].Unban();
-                    }
-                    else
-                    {
-                        Console.WriteLine("Ошибка");
-                    }
-
-                }
+                }            
+            }
+            else
+            {
+                Console.WriteLine("Ошибка");
             }
         }
     }
@@ -105,16 +112,16 @@ namespace DataBase
     class Player
     {
         private bool _isBanned;
+        public Random Random { get;private set; }
         public string Name { get; private set; }
         public int Level { get; private set; }
 
-        private Random _random = new Random();
-
         public Player(string name)
         {
+            Random = new Random();
             Name = name;
-            Level = _random.Next(81);
-            _isBanned = false;
+            Level = Random.Next(81);
+            _isBanned = false;          
         }
 
         public void Ban()

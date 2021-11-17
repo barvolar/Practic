@@ -1,0 +1,16 @@
+E:\Learn\Shoper\Shoper\bin\Debug\net5.0\Shoper.exe
+E:\Learn\Shoper\Shoper\bin\Debug\net5.0\Shoper.deps.json
+E:\Learn\Shoper\Shoper\bin\Debug\net5.0\Shoper.runtimeconfig.json
+E:\Learn\Shoper\Shoper\bin\Debug\net5.0\Shoper.runtimeconfig.dev.json
+E:\Learn\Shoper\Shoper\bin\Debug\net5.0\Shoper.dll
+E:\Learn\Shoper\Shoper\bin\Debug\net5.0\ref\Shoper.dll
+E:\Learn\Shoper\Shoper\bin\Debug\net5.0\Shoper.pdb
+E:\Learn\Shoper\Shoper\obj\Debug\net5.0\Shoper.csprojAssemblyReference.cache
+E:\Learn\Shoper\Shoper\obj\Debug\net5.0\Shoper.GeneratedMSBuildEditorConfig.editorconfig
+E:\Learn\Shoper\Shoper\obj\Debug\net5.0\Shoper.AssemblyInfoInputs.cache
+E:\Learn\Shoper\Shoper\obj\Debug\net5.0\Shoper.AssemblyInfo.cs
+E:\Learn\Shoper\Shoper\obj\Debug\net5.0\Shoper.csproj.CoreCompileInputs.cache
+E:\Learn\Shoper\Shoper\obj\Debug\net5.0\Shoper.dll
+E:\Learn\Shoper\Shoper\obj\Debug\net5.0\ref\Shoper.dll
+E:\Learn\Shoper\Shoper\obj\Debug\net5.0\Shoper.pdb
+E:\Learn\Shoper\Shoper\obj\Debug\net5.0\Shoper.genruntimeconfig.cache

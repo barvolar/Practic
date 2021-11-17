@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 
 namespace Shop_01
-{
+{// Создать класс инвентарей
     class Program
     {
         static void Main(string[] args)
@@ -26,12 +26,7 @@ namespace Shop_01
                         Console.WriteLine("Введите номер товара");
                         vendor.ShowItems();
                         userInput = Console.ReadLine();
-
-                        if (Int32.TryParse(userInput, out int number) && (number <= vendor.Bag.Count))
-                        {
-                            byuer.AddItem(vendor.Bag[number - 1]);
-                            vendor.RemoveItem(number);
-                        }                   
+                        byuer.AddItem(vendor)
                         break;
                     case "3":
                         byuer.ShowItems();
@@ -59,7 +54,7 @@ namespace Shop_01
 
     class Human
     {
-        public List<Product> Bag { get; protected set; }
+        protected List<Product> Bag;
 
         public void ShowItems()
         {
@@ -73,16 +68,22 @@ namespace Shop_01
 
     class Buyer : Human
     {
-        private Vendor _vendor = new Vendor();
+        
         public Buyer()
         {
             Bag = new List<Product>();
         }
 
-        public void AddItem(Product item)
+        public void AddItem(Product item,string input)
         {
             Bag.Add(item);
+            if (Int32.TryParse(input, out int number) && (number <=Bag.Count))
+            {
+                Bag.Add(item);
+            }
         }
+
+       
     }
 
     class Vendor : Human
@@ -109,6 +110,17 @@ namespace Shop_01
             }
         }
 
+        public Bag asdasd(int number)
+        {
+            for (int i = 0; i < Bag.Count; i++)
+            {
+                if (Bag[i] == Bag[number])
+                {
+                    return Bag[i];
+                }
+            }
+        }
+
         public void RemoveItem(int number)
         {
 
@@ -131,6 +143,11 @@ namespace Shop_01
                 }
             }
         }
+    }
+
+    class Bag
+    {
+
     }
 
     class Product
