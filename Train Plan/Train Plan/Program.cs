@@ -30,7 +30,6 @@ namespace Train_Plan
                     Console.WriteLine($"Количество прибывших пасажиров - {passengers.CountPassenger}");
                     ShowMenu();
 
-
                     switch (Console.ReadLine())
                     {
                         case "1":
@@ -73,7 +72,6 @@ namespace Train_Plan
                     }
                     Console.ReadKey();
                     Console.Clear();
-
                 }
             }
         }
@@ -95,7 +93,6 @@ namespace Train_Plan
             _random = new Random();
             CountPassenger = _random.Next(5000);
         }
-
     }
 
     class Wagon
