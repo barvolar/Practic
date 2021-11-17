@@ -81,19 +81,19 @@ namespace qqq
     class Shop
     {
         private List<Product> _vendorBag;
-        private List<Product> _buyerBag;
+        private List<Product> _playerBag;
 
         public Shop()
         {
             _vendorBag = new List<Product>() { new Product("Яблоко", 11), new Product("хлеб", 23), new Product("сыр", 46) };
-            _buyerBag = new List<Product>();
+            _playerBag = new List<Product>();
         }
 
         public void Buy(int number, Player player)
         {
             if (_vendorBag[number - 1].ReturnPrice() <= player.ReturnMoney())
             {
-                _buyerBag.Add(_vendorBag[number - 1]);
+                _playerBag.Add(_vendorBag[number - 1]);
                 _vendorBag.RemoveAt(number - 1);
                 player.SpendMoney(_vendorBag[number - 1].ReturnPrice());
             }
@@ -105,7 +105,7 @@ namespace qqq
 
         public void ShowMyBag()
         {
-            foreach (var item in _buyerBag)
+            foreach (var item in _playerBag)
             {
                 item.ShowInfo();
             }
