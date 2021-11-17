@@ -8,11 +8,13 @@ namespace qqq
         static void Main(string[] args)
         {
             Shop shop = new Shop();
+            Player player = new Player(70);
             bool isPlay = true;
             string input;
 
-            while (isPlay)
+            while (isPlay && (player.ReturnMoney() >= 0))
             {
+                player.ShowMoney();
                 ShowMenu();
                 input = Console.ReadLine();
 
@@ -25,9 +27,9 @@ namespace qqq
                         shop.ShowItems();
                         Console.WriteLine("Введите номер предмета");
                         input = Console.ReadLine();
-                        if (Int32.TryParse(input, out int number))
+                        if ((Int32.TryParse(input, out int number)) && number <= shop.ReturnBagCount()) 
                         {
-                            shop.Buy(number);
+                            shop.Buy(number, player);
                         }
                         break;
                     case "3":
@@ -51,26 +53,59 @@ namespace qqq
         }
     }
 
+    class Player
+    {
+        private int _money;
+
+        public Player(int money)
+        {
+            _money = money;
+        }
+
+        public int ReturnMoney()
+        {
+            return _money;
+        }
+
+        public void SpendMoney(int value)
+        {
+            _money -= value;
+        }
+
+        public void ShowMoney()
+        {
+            Console.WriteLine($"Мои деньги : {_money}");
+        }
+    }
+
     class Shop
     {
-        protected List<Product> vendorBag;
-        protected List<Product> buyerBag;
+        private List<Product> _vendorBag;
+        private List<Product> _buyerBag;
 
         public Shop()
         {
-            vendorBag = new List<Product>() { new Product("Яблоко", 11), new Product("хлеб", 23), new Product("сыр", 46) };
-            buyerBag = new List<Product>();
+            _vendorBag = new List<Product>() { new Product("Яблоко", 11), new Product("хлеб", 23), new Product("сыр", 46) };
+            _buyerBag = new List<Product>();
         }
 
-        public void Buy(int number)
+        public void Buy(int number, Player player)
         {
-            buyerBag.Add(vendorBag[number - 1]);
-            vendorBag.RemoveAt(number - 1);
+            if (_vendorBag[number - 1].ReturnPrice() <= player.ReturnMoney())
+            {
+                _buyerBag.Add(_vendorBag[number - 1]);
+                _vendorBag.RemoveAt(number - 1);
+                player.SpendMoney(_vendorBag[number - 1].ReturnPrice());
+            }
+            else
+            {
+                Console.WriteLine("Ошибка");
+            }
         }
 
         public void ShowMyBag()
         {
-            foreach (var item in buyerBag)
+            foreach (var item in _buyerBag)
             {
                 item.ShowInfo();
             }
@@ -78,16 +113,22 @@ namespace qqq
 
         public void ShowItems()
         {
-            for (int i = 0; i < vendorBag.Count; i++)
+            for (int i = 0; i < _vendorBag.Count; i++)
             {
                 Console.Write($"{i + 1} - ");
-                vendorBag[i].ShowInfo();
+                _vendorBag[i].ShowInfo();
+
             }
+        }
+
+        public int ReturnBagCount()
+        {
+            return _vendorBag.Count;
         }
 
     }
 
- 
+
 
     class Product
     {
@@ -103,6 +144,11 @@ namespace qqq
         public void ShowInfo()
         {
             Console.WriteLine($"{_name} цена : {_price}");
+        }
+
+        public int ReturnPrice()
+        {
+            return _price;
         }
     }
 
