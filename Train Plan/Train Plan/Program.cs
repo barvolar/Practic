@@ -64,7 +64,8 @@ namespace Train_Plan
                             }
                             break;
                         case "4":
-                            isPlay = false;
+                            trainReadnis = true;
+                            isPlay = false;                        
                             break;
                         default:
                             Console.WriteLine("Ошибка");
@@ -89,7 +90,6 @@ namespace Train_Plan
 
         public int CountPassenger { get; private set; }
 
-
         public Passengers()
         {
             _random = new Random();
@@ -105,7 +105,6 @@ namespace Train_Plan
 
         public int WagonCount { get; private set; }
 
-
         public Wagon()
         {
             _passenger = new Passengers();   
@@ -120,14 +119,13 @@ namespace Train_Plan
         {
             WagonCount = passengersCount / _maxPlace;
         }
-
     }
 
     class Direction
     {
         private string _departure;
         private string _arrival;
-        public string Directopn;
+        public string Directopn { get; private set; }
 
         public Direction()
         {
