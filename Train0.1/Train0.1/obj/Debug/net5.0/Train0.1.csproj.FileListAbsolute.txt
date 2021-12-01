@@ -1,0 +1,16 @@
+E:\Learn\Train0.1\Train0.1\bin\Debug\net5.0\Train0.1.exe
+E:\Learn\Train0.1\Train0.1\bin\Debug\net5.0\Train0.1.deps.json
+E:\Learn\Train0.1\Train0.1\bin\Debug\net5.0\Train0.1.runtimeconfig.json
+E:\Learn\Train0.1\Train0.1\bin\Debug\net5.0\Train0.1.runtimeconfig.dev.json
+E:\Learn\Train0.1\Train0.1\bin\Debug\net5.0\Train0.1.dll
+E:\Learn\Train0.1\Train0.1\bin\Debug\net5.0\ref\Train0.1.dll
+E:\Learn\Train0.1\Train0.1\bin\Debug\net5.0\Train0.1.pdb
+E:\Learn\Train0.1\Train0.1\obj\Debug\net5.0\Train0.1.csprojAssemblyReference.cache
+E:\Learn\Train0.1\Train0.1\obj\Debug\net5.0\Train0.1.GeneratedMSBuildEditorConfig.editorconfig
+E:\Learn\Train0.1\Train0.1\obj\Debug\net5.0\Train0.1.AssemblyInfoInputs.cache
+E:\Learn\Train0.1\Train0.1\obj\Debug\net5.0\Train0.1.AssemblyInfo.cs
+E:\Learn\Train0.1\Train0.1\obj\Debug\net5.0\Train0.1.csproj.CoreCompileInputs.cache
+E:\Learn\Train0.1\Train0.1\obj\Debug\net5.0\Train0.1.dll
+E:\Learn\Train0.1\Train0.1\obj\Debug\net5.0\ref\Train0.1.dll
+E:\Learn\Train0.1\Train0.1\obj\Debug\net5.0\Train0.1.pdb
+E:\Learn\Train0.1\Train0.1\obj\Debug\net5.0\Train0.1.genruntimeconfig.cache
