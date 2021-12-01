@@ -35,13 +35,13 @@ namespace Kartinki
                         {
                             Console.WriteLine("Ошибка в поезде нету пассажиров");
                         }
-                        else if (menagment.ReadinessTrine==false)
+                        else if (menagment.ReadinessTrine == false)
                         {
                             Console.WriteLine("Ошибка поезд не готов");
                         }
                         else
                         {
-                            menagment.ShowInfo();
+                            menagment.SendTrine();
                             menagment = new Menagment();
                             direction = new Direction();
                         }
@@ -65,7 +65,7 @@ namespace Kartinki
         private List<Human> _humans;
         private Random _random;
         private List<Wagon> _trine;
-    
+
         public bool ReadinessTrine { get; private set; }
         public bool ReadinessHuman { get; private set; }
 
@@ -80,7 +80,7 @@ namespace Kartinki
 
         public void CreateHumans()
         {
-            int maxPeopleCount=_random.Next(100);
+            int maxPeopleCount = _random.Next(100);
 
             for (int i = 0; i < maxPeopleCount; i++)
             {
@@ -88,7 +88,7 @@ namespace Kartinki
             }
 
             ReadinessHuman = true;
-            Console.WriteLine("Билетов продано "+maxPeopleCount);
+            Console.WriteLine("Билетов продано " + maxPeopleCount);
         }
 
         public void CreateTrine()
@@ -101,12 +101,12 @@ namespace Kartinki
             ReadinessTrine = true;
         }
 
-        public void ShowInfo()
+        public void SendTrine()
         {
-            Console.WriteLine($"Убыл поезд : Количество вагонов = {_trine.Count}") ;
+            Console.WriteLine($"Убыл поезд : Количество вагонов = {_trine.Count}");
             for (int i = 0; i < _trine.Count; i++)
             {
-                Console.WriteLine($"\nВагон номер : {i+1}");
+                Console.WriteLine($"\nВагон номер : {i + 1}");
                 _trine[i].ShowInfo();
             }
         }
@@ -159,7 +159,7 @@ namespace Kartinki
             Console.WriteLine("Создание вагона , укажите максимальное количество мест");
             string input = Console.ReadLine();
 
-            if(Int32.TryParse(input,out int value)&&value >0)
+            if (Int32.TryParse(input, out int value) && value > 0)
             {
                 _maxPlace = value;
 
@@ -169,8 +169,8 @@ namespace Kartinki
                 Console.WriteLine("Ошибка ввода создан вагон с 1 местом");
                 _maxPlace = 1;
 
-            }   
-            
+            }
+
             _passengers = new List<Human>();
         }
 
@@ -192,7 +192,7 @@ namespace Kartinki
 
             for (int i = 0; i < _passengers.Count; i++)
             {
-                Console.WriteLine("пассажир № "+ (i+1) +". Имя "+_passengers[i].Name);
+                Console.WriteLine("пассажир № " + (i + 1) + ". Имя " + _passengers[i].Name);
             }
         }
     }
@@ -211,7 +211,7 @@ namespace Kartinki
 
         private void CreateName()
         {
-            int number = _random.Next(0,11);
+            int number = _random.Next(0, 11);
 
             switch (number)
             {
