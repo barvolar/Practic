@@ -36,84 +36,14 @@ namespace Train0._1
                 switch (Console.ReadLine())
                 {
                     case "1":
-                        if (_isReadiness == true)
-                        {
-                            Console.WriteLine("Поезд уже создан , отправьте его");
-                        }
-
-                        else
-                        {
-                            _trains.Add(new Train());
-                            bool isReadinessPath = false;
-                            bool isReadinessPeople = false;
-                            bool isReadinessTrain = false;
-                            while (_isReadiness == false)
-                            {
-                                Console.WriteLine("1: Задать маршрут\n2: Добавить пассажиров\n3: Создать вагоны");
-
-                                switch (Console.ReadLine())
-                                {
-                                    case "1":
-
-                                        _trains[_trains.Count - 1].AddPath();
-                                        isReadinessPath = true;
-
-                                        break;
-                                    case "2":
-                                        CreateHumans();
-                                        Console.WriteLine("Людей готовых уехать  " + _humans.Count);
-                                        isReadinessPeople = true;
-                                        break;
-                                    case "3":
-                                        if (_humans.Count > 0)
-                                        {
-                                            _trains[_trains.Count - 1].Create(_humans);
-                                            isReadinessTrain = true;
-                                        }
-                                        else
-                                        {
-                                            Console.WriteLine("нету пассажиров");
-                                        }
-                                        break;
-                                }
-
-                                if (isReadinessTrain && isReadinessPeople && isReadinessPath == true)
-                                {
-                                    _isReadiness = true;
-                                }
-                                Console.ReadKey();
-                                Console.Clear();
-                            }
-                        }
+                        CreateTrain();                       
                         break;
                     case "2":
-                        if (_isReadiness == false)
-                        {
-                            Console.WriteLine("Поезд не готов");
-                        }
-                        else
-                        {
-                            _trains[_trains.Count-1].ShowInfo();
-                            _isReadiness = false;
-                        }
+                        SendTrain();
                         break;
                     case "3":
-                        Console.WriteLine("С вашей станции уехало " + _trains.Count+" поездов\n Введите номер для получения информации о поезде");
-
-                        for (int i = 0; i < _trains.Count; i++)
-                        {
-                            Console.WriteLine((i + 1) + ": "+_trains[i].Name);
-                        }
-
-                        if(Int32.TryParse(Console.ReadLine(),out int value) && value <=_trains.Count && value >0)
-                        {
-                            _trains[value - 1].ShowInfo();
-                        }
-                        else
-                        {
-                            Console.WriteLine("Ошибка");
-                        }
-                        break;
+                        ShowInfo();
+                        break;  
                     case "4":
                         _isPlay = false;
                         break;
@@ -124,7 +54,7 @@ namespace Train0._1
             }
         }
 
-        public void CreateHumans()
+        private void CreateHumans()
         {
             Random random = new Random();
             int maxHuman = random.Next(100);
@@ -134,6 +64,90 @@ namespace Train0._1
                 _humans.Add(new Human());
             }
             
+        }
+        private void CreateTrain()
+        {
+            if (_isReadiness == true)
+            {
+                Console.WriteLine("Поезд уже создан , отправьте его");
+            }
+
+            else
+            {
+                _trains.Add(new Train());
+                bool isReadinessPath = false;
+                bool isReadinessPeople = false;
+                bool isReadinessTrain = false;
+                while (_isReadiness == false)
+                {
+                    Console.WriteLine("1: Задать маршрут\n2: Добавить пассажиров\n3: Создать вагоны");
+
+                    switch (Console.ReadLine())
+                    {
+                        case "1":
+
+                            _trains[_trains.Count - 1].AddPath();
+                            isReadinessPath = true;
+
+                            break;
+                        case "2":
+                            CreateHumans();
+                            Console.WriteLine("Людей готовых уехать  " + _humans.Count);
+                            isReadinessPeople = true;
+                            break;
+                        case "3":
+                            if (_humans.Count > 0)
+                            {
+                                _trains[_trains.Count - 1].Create(_humans);
+                                isReadinessTrain = true;
+                            }
+                            else
+                            {
+                                Console.WriteLine("нету пассажиров");
+                            }
+                            break;
+                    }
+
+                    if (isReadinessTrain && isReadinessPeople && isReadinessPath == true)
+                    {
+                        _isReadiness = true;
+                    }
+                    Console.ReadKey();
+                    Console.Clear();
+                }
+            }
+        }
+
+        private void SendTrain()
+        {
+            if (_isReadiness == false)
+            {
+                Console.WriteLine("Поезд не готов");
+            }
+            else
+            {
+                _trains[_trains.Count - 1].ShowInfo();
+                _isReadiness = false;
+            }
+        }
+
+        private void ShowInfo()
+        {
+            Console.WriteLine("С вашей станции уехало " + _trains.Count + " поездов\n Введите номер для получения информации о поезде");
+
+            for (int i = 0; i < _trains.Count; i++)
+            {
+                Console.WriteLine((i + 1) + ": " + _trains[i].Name);
+            }
+
+            if (Int32.TryParse(Console.ReadLine(), out int value) && value <= _trains.Count && value > 0)
+            {
+                _trains[value - 1].ShowInfo();
+            }
+            else
+            {
+                Console.WriteLine("Ошибка");
+            }
         }
 
     }
