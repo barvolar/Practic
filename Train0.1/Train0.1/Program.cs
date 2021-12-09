@@ -8,7 +8,7 @@ namespace Train0._1
         static void Main(string[] args)
         {
             Menagement menagement = new Menagement();
-            menagement.Menu();
+            menagement.ShowMenu();
         }
     }
 
@@ -27,7 +27,7 @@ namespace Train0._1
             _isReadiness = false;
         }
 
-        public void Menu()
+        public void ShowMenu()
         {
             while (_isPlay)
             {
