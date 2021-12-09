@@ -7,42 +7,43 @@ namespace Kartinki
     {
         static void Main(string[] args)
         {
+
             bool isPlay = true;
-            Menagment menagment = new Menagment();
+            Management management = new Management();
             Direction direction = new Direction();
 
             while (isPlay)
             {
-                direction.ShowPath();
-                menagment.ShowMenu();
+                //direction.ShowPath();
+                management.ShowMenu();
                 switch (Console.ReadLine())
                 {
                     case "1":
                         direction.CreatePath();
                         break;
                     case "2":
-                        menagment.CreateHumans();
+                        management.CreateHumans();
                         break;
                     case "3":
-                        menagment.CreateTrine();
+                        management.CreateTrain();
                         break;
                     case "4":
                         if (direction.ReadinessPath == false)
                         {
                             Console.WriteLine("Ошибка не задан маршрут");
                         }
-                        else if (menagment.ReadinessHuman == false)
+                        else if (management.ReadinessHuman == false)
                         {
                             Console.WriteLine("Ошибка в поезде нету пассажиров");
                         }
-                        else if (menagment.ReadinessTrine == false)
+                        else if (management.ReadinessTrine == false)
                         {
                             Console.WriteLine("Ошибка поезд не готов");
                         }
                         else
                         {
-                            menagment.SendTrine();
-                            menagment = new Menagment();
+                            management.SendTrain();
+                            management = new Management();
                             direction = new Direction();
                         }
                         break;
@@ -60,24 +61,41 @@ namespace Kartinki
         }
     }
 
-    class Menagment
+    class Management
     {
         private List<Human> _humans;
         private Random _random;
-        private List<Wagon> _trine;
+        private List<Train> _trains;
+        private Train train;
+        private string _path;
 
         public bool ReadinessTrine { get; private set; }
         public bool ReadinessHuman { get; private set; }
 
-        public Menagment()
+
+        public Management()
         {
             _random = new Random();
             _humans = new List<Human>();
-            _trine = new List<Wagon>();
+            _trains = new List<Train>();
             ReadinessHuman = false;
             ReadinessTrine = false;
+            train = new Train();
+            _path = "не задано";
         }
 
+
+        public void CreateTrain()
+        {
+            _trains.Add(new Train());
+            _trains[_trains.Count].Create(_humans);
+        }
+
+        public void SendTrain()
+        {
+            train.Send();
+
+        }
         public void CreateHumans()
         {
             int maxPeopleCount = _random.Next(100);
@@ -91,30 +109,84 @@ namespace Kartinki
             Console.WriteLine("Билетов продано " + maxPeopleCount);
         }
 
-        public void CreateTrine()
-        {
-            for (int i = 0; i < _humans.Count; i++)
-            {
-                _trine.Add(new Wagon());
-                _trine[i].AddPassengers(_humans);
-            }
-            ReadinessTrine = true;
-        }
+        //public void CreateTrain()
+        //{
+        //    for (int i = 0; i < _humans.Count; i++)
+        //    {
+        //        _train.Add(new Wagon());
+        //        _train[i].AddPassengers(_humans);
+        //    }
+        //    ReadinessTrine = true;
+        //}
 
-        public void SendTrine()
-        {
-            Console.WriteLine($"Убыл поезд : Количество вагонов = {_trine.Count}");
-            for (int i = 0; i < _trine.Count; i++)
-            {
-                Console.WriteLine($"\nВагон номер : {i + 1}");
-                _trine[i].ShowInfo();
-            }
-        }
+        //public void SendTrine()
+        //{
+        //    Console.WriteLine($"Убыл поезд : Количество вагонов = {_train.Count}");
+        //    for (int i = 0; i < _train.Count; i++)
+        //    {
+        //        Console.WriteLine($"\nВагон номер : {i + 1}");
+        //        _train[i].ShowInfo();
+        //    }
+        //}
 
         public void ShowMenu()
         {
-            Console.WriteLine($"Ожидающих убытия пассажиров - {_humans.Count}");
+            Console.WriteLine($"Маршрут движения {_path}\nОжидающих убытия пассажиров - {_humans.Count}");
             Console.WriteLine("\n1: Задать направление\n2: Создать пассажиров\n3: Создать поезд\n4: Отправить поезд\n5: Выход");
+        }
+    }
+
+    //Создайте класс поезда, который содержит всю информацию, о пути, вагонах, пассажирах.
+    //    А в управлении есть список всех поездов.И тогда после отправки поезда, создается этот поезд и добавляется в список.
+    class Train
+    {
+        private string _direction;
+        private string _name;
+        private List<Wagon> _wagons;
+
+        public bool Readiness;
+        public bool ReadinessPath;
+        public Train()
+        {
+            _wagons = new List<Wagon>();
+            Console.WriteLine("Введите название поезда");
+            _name = Console.ReadLine();
+            Readiness = false;
+            ReadinessPath = false;
+        }
+
+        public void AddDirection(string path)
+        {
+            Console.WriteLine("Введите место отправления");
+            string start = Console.ReadLine();
+            Console.WriteLine("Введите место прибытия");
+            string finish = Console.ReadLine();
+            path = start + finish;
+            _direction = path;
+        }
+
+        public void Create(List<Human> humans)
+        {
+
+            for (int i = 0; i <= humans.Count; i++)
+            {
+                _wagons.Add(new Wagon());
+                _wagons[i].AddPassengers(humans);
+            }
+            Readiness = true;
+        }
+
+        public void Send()
+        {
+
+            Console.WriteLine($"Убыл поезд {_name}: Количество вагонов = {_wagons.Count}");
+            for (int i = 0; i < _wagons.Count; i++)
+            {
+                Console.WriteLine($"\nВагон номер : {i + 1}");
+                _wagons[i].ShowInfo();
+            }
+
+
         }
     }
 
