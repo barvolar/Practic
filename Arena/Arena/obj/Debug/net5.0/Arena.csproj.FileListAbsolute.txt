@@ -1,0 +1,16 @@
+E:\Learn\Arena\Arena\bin\Debug\net5.0\Arena.exe
+E:\Learn\Arena\Arena\bin\Debug\net5.0\Arena.deps.json
+E:\Learn\Arena\Arena\bin\Debug\net5.0\Arena.runtimeconfig.json
+E:\Learn\Arena\Arena\bin\Debug\net5.0\Arena.runtimeconfig.dev.json
+E:\Learn\Arena\Arena\bin\Debug\net5.0\Arena.dll
+E:\Learn\Arena\Arena\bin\Debug\net5.0\ref\Arena.dll
+E:\Learn\Arena\Arena\bin\Debug\net5.0\Arena.pdb
+E:\Learn\Arena\Arena\obj\Debug\net5.0\Arena.csprojAssemblyReference.cache
+E:\Learn\Arena\Arena\obj\Debug\net5.0\Arena.GeneratedMSBuildEditorConfig.editorconfig
+E:\Learn\Arena\Arena\obj\Debug\net5.0\Arena.AssemblyInfoInputs.cache
+E:\Learn\Arena\Arena\obj\Debug\net5.0\Arena.AssemblyInfo.cs
+E:\Learn\Arena\Arena\obj\Debug\net5.0\Arena.csproj.CoreCompileInputs.cache
+E:\Learn\Arena\Arena\obj\Debug\net5.0\Arena.dll
+E:\Learn\Arena\Arena\obj\Debug\net5.0\ref\Arena.dll
+E:\Learn\Arena\Arena\obj\Debug\net5.0\Arena.pdb
+E:\Learn\Arena\Arena\obj\Debug\net5.0\Arena.genruntimeconfig.cache

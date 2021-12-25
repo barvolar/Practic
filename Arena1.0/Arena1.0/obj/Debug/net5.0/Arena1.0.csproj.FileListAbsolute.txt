@@ -1,0 +1,16 @@
+E:\Learn\Arena1.0\Arena1.0\bin\Debug\net5.0\Arena1.0.exe
+E:\Learn\Arena1.0\Arena1.0\bin\Debug\net5.0\Arena1.0.deps.json
+E:\Learn\Arena1.0\Arena1.0\bin\Debug\net5.0\Arena1.0.runtimeconfig.json
+E:\Learn\Arena1.0\Arena1.0\bin\Debug\net5.0\Arena1.0.runtimeconfig.dev.json
+E:\Learn\Arena1.0\Arena1.0\bin\Debug\net5.0\Arena1.0.dll
+E:\Learn\Arena1.0\Arena1.0\bin\Debug\net5.0\ref\Arena1.0.dll
+E:\Learn\Arena1.0\Arena1.0\bin\Debug\net5.0\Arena1.0.pdb
+E:\Learn\Arena1.0\Arena1.0\obj\Debug\net5.0\Arena1.0.csprojAssemblyReference.cache
+E:\Learn\Arena1.0\Arena1.0\obj\Debug\net5.0\Arena1.0.GeneratedMSBuildEditorConfig.editorconfig
+E:\Learn\Arena1.0\Arena1.0\obj\Debug\net5.0\Arena1.0.AssemblyInfoInputs.cache
+E:\Learn\Arena1.0\Arena1.0\obj\Debug\net5.0\Arena1.0.AssemblyInfo.cs
+E:\Learn\Arena1.0\Arena1.0\obj\Debug\net5.0\Arena1.0.csproj.CoreCompileInputs.cache
+E:\Learn\Arena1.0\Arena1.0\obj\Debug\net5.0\Arena1.0.dll
+E:\Learn\Arena1.0\Arena1.0\obj\Debug\net5.0\ref\Arena1.0.dll
+E:\Learn\Arena1.0\Arena1.0\obj\Debug\net5.0\Arena1.0.pdb
+E:\Learn\Arena1.0\Arena1.0\obj\Debug\net5.0\Arena1.0.genruntimeconfig.cache
