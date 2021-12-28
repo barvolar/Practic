@@ -30,17 +30,21 @@ namespace Arena1._0
         {
             Health -= value - Armor;
         }
+
         public virtual void UseSkill(Human human)
         {
         }
+
         public virtual void ShowInfo()
         {
             Console.WriteLine($"{Name}: hp - {Health}, armor - {Armor}, damage - {Damage}");
         }
+
         public virtual void TakeDamageThrougArmor(int value)
         {
             Health -= value;
         }
+
         public virtual void DestroyArmor()
         {
             if (Armor > 0)
@@ -165,6 +169,7 @@ namespace Arena1._0
                 Health = 4000;
             }
         }
+
         public override void ShowInfo()
         {
             base.ShowInfo();
@@ -230,7 +235,8 @@ namespace Arena1._0
         public override void UseSkill(Human human)
         {
             Random random = new Random();
-            int chance = random.Next(7);
+            int chanceCount = 7;
+            int chance = random.Next(chanceCount);
 
             if (chance == 3)
             {
@@ -242,6 +248,7 @@ namespace Arena1._0
                 Console.WriteLine("Смертельный удар не удался");
             }
         }
+
         public override void ShowInfo()
         {
             base.ShowInfo();
@@ -302,6 +309,7 @@ namespace Arena1._0
                 _oneFighter.ShowInfo();
                 _twoFighter.ShowInfo();
                 Console.WriteLine();
+
                 if (_oneFighter.Speed1 > _twoFighter.Speed1)
                 {
                     Attack(_oneFighter, _twoFighter);
@@ -340,16 +348,19 @@ namespace Arena1._0
             _fighters.Add(new Warrior());
             _fighters.Add(new Assasin());
         }
+
         private void WinHandler()
         {
             if (_oneFighter.IsAlive == false && _twoFighter.IsAlive == false/*_oneFighter.Health1 < 0 && _twoFighter.Health1 < 0*/)
             {
                 Console.WriteLine("Оба бойца проиграли");
             }
+
             if (_oneFighter.IsAlive == false)
             {
                 Console.WriteLine("Побеждает " + _twoFighter.Name1);
             }
+
             if (_twoFighter.IsAlive == false)
             {
                 Console.WriteLine("Побеждает " + _oneFighter.Name1);
