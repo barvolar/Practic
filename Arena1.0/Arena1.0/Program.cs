@@ -280,16 +280,16 @@ namespace Arena1._0
             FightHandler();
         }
 
-        private void PickHandler(out Human human, Human human1)
+        private void PickHandler(out Human chosenhuman, Human enemyHuman)
         {
-            if (Int32.TryParse(Console.ReadLine(), out int userInput) && userInput <= _fighters.Count && userInput > 0&&human1!=_fighters[userInput-1])
+            if (Int32.TryParse(Console.ReadLine(), out int userInput) && userInput <= _fighters.Count && userInput > 0 && enemyHuman != _fighters[userInput - 1])
             {
-                human = _fighters[userInput - 1];
+                chosenhuman = _fighters[userInput - 1];
             }
             else
             {
                 Console.WriteLine("Ошибка ввода или боец уже вабран, выберите другого");
-                PickHandler(out human, human1);
+                PickHandler(out chosenhuman, enemyHuman);
             }
         }
 
