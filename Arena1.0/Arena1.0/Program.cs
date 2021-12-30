@@ -138,6 +138,7 @@ namespace Arena1._0
     {
         private int _maxHealth;
         private int _healingPower;
+
         public Paladin()
         {
             Name = "Pal";
