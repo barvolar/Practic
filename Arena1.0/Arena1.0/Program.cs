@@ -14,16 +14,11 @@ namespace Arena1._0
 
     class Human
     {
-        protected string Name;
-        protected int Damage;
-        protected int Health;
-        protected int Armor;
-        protected int Speed;
-
-        public string Name1 => Name;
-        public int Damage1 => Damage;
-        public int Speed1 => Speed;
-        public int Health1 => Health;
+        public string Name { get; protected set; }
+        public int Damage { get; protected set; }
+        public int Health { get; protected set; }
+        public int Armor { get; protected set; }
+        public int Speed { get; protected set; }
         public bool IsAlive => Health > 0;
 
         public virtual void TakeDamage(int value)
@@ -47,10 +42,12 @@ namespace Arena1._0
 
         public virtual void DestroyArmor()
         {
+            int armorCount = 5;
+
             if (Armor > 0)
             {
                 Console.WriteLine($"{Name} теряет немного брони");
-                Armor -= 5;
+                Armor -= armorCount;
             }
             else
             {
@@ -139,6 +136,8 @@ namespace Arena1._0
 
     class Paladin : Human
     {
+        private int _maxHealth;
+        private int _healingPower;
         public Paladin()
         {
             Name = "Pal";
@@ -146,6 +145,8 @@ namespace Arena1._0
             Armor = 50;
             Health = 4000;
             Speed = 1;
+            _maxHealth = Health;
+            _healingPower = 500;
         }
 
         public override void TakeDamage(int value)
@@ -159,14 +160,13 @@ namespace Arena1._0
         }
 
         public override void UseSkill(Human human)
-        {
-            int healingCount = 300;
+        {          
             Console.WriteLine($"{Name} исцеляется");
-            Health += healingCount;
+            Health += _healingPower;
 
-            if (Health > 4000)
+            if (Health > _maxHealth)
             {
-                Health = 4000;
+                Health = _maxHealth;
             }
         }
 
@@ -178,6 +178,8 @@ namespace Arena1._0
 
     class Warlock : Human
     {
+        private int _lifeDrinePower;
+
         public Warlock()
         {
             Name = "warlock";
@@ -185,6 +187,7 @@ namespace Arena1._0
             Armor = 15;
             Health = 2000;
             Speed = 5;
+            _lifeDrinePower = 200;
         }
 
         public override void TakeDamage(int value)
@@ -199,10 +202,9 @@ namespace Arena1._0
 
         public override void UseSkill(Human human)
         {
-            int LifeDrineCount = 200;
             Console.WriteLine($"{Name} вытягивает жизненную силу");
-            human.TakeDamageThrougArmor(LifeDrineCount);
-            Health += LifeDrineCount;
+            human.TakeDamageThrougArmor(_lifeDrinePower);
+            Health += _lifeDrinePower;
         }
 
         public override void ShowInfo()
@@ -213,6 +215,8 @@ namespace Arena1._0
 
     class Assasin : Human
     {
+        private int _superDamage;
+
         public Assasin()
         {
             Name = "assasin";
@@ -220,6 +224,7 @@ namespace Arena1._0
             Armor = 35;
             Health = 2100;
             Speed = 10;
+            _superDamage = 9999999;
         }
 
         public override void TakeDamage(int value)
@@ -236,12 +241,13 @@ namespace Arena1._0
         {
             Random random = new Random();
             int chanceCount = 7;
+            int valueSuccess = 3;
             int chance = random.Next(chanceCount);
 
-            if (chance == 3)
+            if (chance == valueSuccess)
             {
                 Console.WriteLine($"{Name} наносит смертельный удар");
-                human.TakeDamageThrougArmor(99999);
+                human.TakeDamageThrougArmor(_superDamage);
             }
             else
             {
@@ -310,7 +316,7 @@ namespace Arena1._0
                 _twoFighter.ShowInfo();
                 Console.WriteLine();
 
-                if (_oneFighter.Speed1 > _twoFighter.Speed1)
+                if (_oneFighter.Speed > _twoFighter.Speed)
                 {
                     Attack(_oneFighter, _twoFighter);
                     Attack(_twoFighter, _oneFighter);
@@ -335,8 +341,8 @@ namespace Arena1._0
             }
             else
             {
-                Console.WriteLine(hittingHuman.Name1 + " атакует, сила атаки = " + hittingHuman.Damage1);
-                receivingHuman.TakeDamage(hittingHuman.Damage1);
+                Console.WriteLine(hittingHuman.Name + " атакует, сила атаки = " + hittingHuman.Damage);
+                receivingHuman.TakeDamage(hittingHuman.Damage);
             }
         }
 
@@ -351,19 +357,19 @@ namespace Arena1._0
 
         private void WinHandler()
         {
-            if (_oneFighter.IsAlive == false && _twoFighter.IsAlive == false/*_oneFighter.Health1 < 0 && _twoFighter.Health1 < 0*/)
+            if (_oneFighter.IsAlive == false && _twoFighter.IsAlive == false)
             {
                 Console.WriteLine("Оба бойца проиграли");
             }
 
             if (_oneFighter.IsAlive == false)
             {
-                Console.WriteLine("Побеждает " + _twoFighter.Name1);
+                Console.WriteLine("Побеждает " + _twoFighter.Name);
             }
 
             if (_twoFighter.IsAlive == false)
             {
-                Console.WriteLine("Побеждает " + _oneFighter.Name1);
+                Console.WriteLine("Побеждает " + _oneFighter.Name);
             }
         }
     }
