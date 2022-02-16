@@ -16,4 +16,5 @@ public class Class1
         short damage = 667;
         long armor = 334;
     }
+    
 }
