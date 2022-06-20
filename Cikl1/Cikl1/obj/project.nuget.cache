@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "X2r98vFPe8tTInKhHecrUSxo78SwPpVpVvoS0Aa4ptETHbUEFDFV03KbYIUG3jMjuKfnEKuUMD8SCzE/ibfnPA==",
+  "dgSpecHash": "+8uNjLQjkuF79/kY5PldqR0QI3eHqCPbcMR1DvZogZhrwxspo/IIVPjPx1phCdgEb+Fs6AF7BEz2wGYMjC1lzg==",
   "success": true,
-  "projectFilePath": "E:\\Learn\\Cikl1\\Cikl1\\Cikl1.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "E:\\TestGit\\Cikl1\\Cikl1\\Cikl1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Kampukter\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.15\\microsoft.netcore.app.host.win-x64.5.0.15.nupkg.sha512"
+  ],
   "logs": []
 }
